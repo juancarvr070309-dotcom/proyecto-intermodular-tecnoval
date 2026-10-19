@@ -1,93 +1,93 @@
-# 1. Definició i caracterització de l'empresa
+# 1. Definición y caracterización de la empresa
 
-## 1.1. Nom comercial i ubicació
+## 1.1. Nombre comercial y ubicación
 
-- **Nom comercial:** TecnoVal Assistència IT
-- **Ubicació:** València, Comunitat Valenciana
-- **Tipus d'empresa:** empresa privada de serveis informàtics
-- **Àmbit d'actuació:** València i municipis pròxims, amb possibilitat d'atendre incidències a distància.
+- **Nombre comercial:** TecnoVal Asistencia IT
+- **Ubicación:** Valencia, Comunidad Valenciana
+- **Tipo de empresa:** empresa privada de servicios informáticos
+- **Ámbito de actuación:** Valencia y municipios próximos, con posibilidad de atender incidencias a distancia.
 
-TecnoVal Assistència IT és una empresa fictícia creada per a aquest projecte. La seua activitat se centra a ajudar altres empreses a mantindre els seus equips i sistemes informàtics en bon estat.
+TecnoVal Asistencia IT es una empresa ficticia creada para este proyecto. Su actividad se centra en ayudar a otras empresas a mantener sus equipos y sistemas informáticos en buen estado.
 
-## 1.2. Activitat econòmica i sector
+## 1.2. Actividad económica y sector
 
-L'empresa pertany al sector terciari, dins de l'àmbit de les tecnologies de la informació i la comunicació (TIC). Presta serveis de suport tècnic, manteniment informàtic, instal·lació i administració de xarxes i assessorament bàsic en seguretat informàtica.
+La empresa pertenece al sector terciario, dentro del ámbito de las tecnologías de la información y la comunicación (TIC). Presta servicios de soporte técnico, mantenimiento informático, instalación y administración de redes y asesoramiento básico en seguridad informática.
 
-## 1.3. Productes i serveis
+## 1.3. Productos y servicios
 
-Els principals serveis són:
+Los principales servicios son:
 
-- **Manteniment d'ordinadors:** revisió, actualització i resolució d'avaries de maquinari i programari.
-- **Suport tècnic:** atenció d'incidències presencialment, per telèfon o a distància.
-- **Instal·lació i configuració de xarxes:** configuració de routers, switches, punts d'accés i connexions.
-- **Gestió de còpies de seguretat:** configuració i comprovació periòdica de còpies de dades.
-- **Instal·lació de programari:** configuració de sistemes operatius i aplicacions de treball.
-- **Assessorament en ciberseguretat:** recomanacions sobre actualitzacions, contrasenyes, permisos i protecció dels equips.
-- **Manteniment preventiu:** revisions planificades per reduir les avaries i les interrupcions del servei.
+- **Mantenimiento de ordenadores:** revisión, actualización y resolución de averías de hardware y software.
+- **Soporte técnico:** atención de incidencias presencialmente, por teléfono o a distancia.
+- **Instalación y configuración de redes:** configuración de routers, switches, puntos de acceso y conexiones.
+- **Gestión de copias de seguridad:** configuración y comprobación periódica de copias de datos.
+- **Instalación de software:** configuración de sistemas operativos y aplicaciones de trabajo.
+- **Asesoramiento en ciberseguridad:** recomendaciones sobre actualizaciones, contraseñas, permisos y protección de los equipos.
+- **Mantenimiento preventivo:** revisiones planificadas para reducir las averías y las interrupciones del servicio.
 
-## 1.4. Tipus de clients
+## 1.4. Tipo de clientes
 
-Els clients principals són petites i mitjanes empreses que no disposen d'un departament informàtic propi o necessiten suport extern. Per exemple:
+Los principales clientes son pequeñas y medianas empresas que no disponen de un departamento informático propio o necesitan soporte externo. Por ejemplo:
 
-- Oficines i assessories.
-- Comerços.
-- Acadèmies i centres de formació.
-- Xicotetes empreses de logística.
-- Negocis locals amb diversos ordinadors i una xarxa interna.
+- Oficinas y asesorías.
+- Comercios.
+- Academias y centros de formación.
+- Pequeñas empresas de logística.
+- Negocios locales con varios ordenadores y una red interna.
 
-Aquests clients necessiten que els equips funcionen correctament, que les dades estiguen protegides i que les incidències es resolguen amb rapidesa.
+Estos clientes necesitan que los equipos funcionen correctamente, que los datos estén protegidos y que las incidencias se resuelvan con rapidez.
 
-## 1.5. Grandària i nombre de treballadors
+## 1.5. Tamaño y número de trabajadores
 
-TecnoVal Assistència IT es planteja com una **microempresa de 12 treballadors**. Aquesta plantilla permet separar les funcions principals sense crear una estructura excessivament complexa.
+TecnoVal Asistencia IT se plantea como una **microempresa de 12 trabajadores**. Esta plantilla permite separar las funciones principales sin crear una estructura excesivamente compleja.
 
-La distribució inicial és:
+La distribución inicial es:
 
-- Direcció: 1 treballador.
-- Administració i atenció al client: 2 treballadors.
-- Suport tècnic: 5 treballadors.
-- Sistemes i xarxes: 3 treballadors.
-- Comercial: 1 treballador.
+- Dirección: 1 trabajador.
+- Administración y atención al cliente: 2 trabajadores.
+- Soporte técnico: 5 trabajadores.
+- Sistemas y redes: 3 trabajadores.
+- Comercial: 1 trabajador.
 
-La distribució detallada es presenta en el document [02-organitzacio.md](02-organitzacio.md).
+La distribución detallada se presenta en el documento [02-organizacion.md](02-organizacion.md).
 
-## 1.6. Estimació del volum de negoci anual
+## 1.6. Estimación del volumen de negocio anual
 
-S'estima un volum de negoci anual de **650.000 €**. Aquesta xifra és una hipòtesi de treball per al projecte, no una dada real d'una empresa existent.
+Se estima un volumen de negocio anual de **650.000 €**. Esta cifra es una hipótesis de trabajo para el proyecto, no un dato real de una empresa existente.
 
-Una justificació orientativa és la combinació de contractes de manteniment periòdic, assistències tècniques puntuals i projectes d'instal·lació o renovació de xarxes. Per exemple, una cartera de clients amb contractes mensuals aporta ingressos recurrents, mentre que les intervencions i instal·lacions generen ingressos addicionals.
+Una justificación orientativa es la combinación de contratos de mantenimiento periódico, asistencias técnicas puntuales y proyectos de instalación o renovación de redes. Por ejemplo, una cartera de clientes con contratos mensuales aporta ingresos recurrentes, mientras que las intervenciones e instalaciones generan ingresos adicionales.
 
-La xifra s'ha de considerar una estimació acadèmica que l'equip pot ajustar si canvia el nombre de clients, els serveis o la plantilla.
+La cifra debe considerarse una estimación académica que el equipo puede ajustar si cambia el número de clientes, los servicios o la plantilla.
 
-## 1.7. Estratègia per respondre a les necessitats dels clients
+## 1.7. Estrategia para responder a las necesidades de los clientes
 
-L'estratègia de l'empresa es basa en:
+La estrategia de la empresa se basa en:
 
-1. **Atenció pròxima:** cada client pot comunicar les incidències per telèfon o correu electrònic.
-2. **Resposta planificada:** les incidències es classifiquen segons la seua urgència i l'impacte en l'activitat del client.
-3. **Manteniment preventiu:** es programen revisions per detectar problemes abans que provoquen una avaria.
-4. **Solucions adaptades:** els recursos i serveis es proposen segons la grandària i les necessitats de cada client.
-5. **Protecció de les dades:** es recomanen actualitzacions, còpies de seguretat i bones pràctiques de seguretat.
-6. **Seguiment:** després d'una intervenció, es comprova que el problema s'ha resolt i es registra el treball realitzat.
+1. **Atención cercana:** cada cliente puede comunicar las incidencias por teléfono o correo electrónico.
+2. **Respuesta planificada:** las incidencias se clasifican según su urgencia y el impacto en la actividad del cliente.
+3. **Mantenimiento preventivo:** se programan revisiones para detectar problemas antes de que provoquen una avería.
+4. **Soluciones adaptadas:** los recursos y servicios se proponen según el tamaño y las necesidades de cada cliente.
+5. **Protección de los datos:** se recomiendan actualizaciones, copias de seguridad y buenas prácticas de seguridad.
+6. **Seguimiento:** después de una intervención, se comprueba que el problema se ha resuelto y se registra el trabajo realizado.
 
-Aquesta estratègia permet reduir el temps d'inactivitat dels clients i oferir un servei adequat a una empresa que no té personal informàtic propi.
+Esta estrategia permite reducir el tiempo de inactividad de los clientes y ofrecer un servicio adecuado a una empresa que no tiene personal informático propio.
 
-## 1.8. Empreses reals de referència
+## 1.8. Empresas reales de referencia
 
 ### Nunsys
 
-- **Activitat:** empresa tecnològica que ofereix solucions i serveis TIC a altres organitzacions.
-- **Serveis relacionats amb el projecte:** serveis IT, sistemes, virtualització, infraestructura, ciberseguretat i externalització de serveis informàtics.
-- **Relació amb TecnoVal:** serveix de referència per a l'oferta de manteniment i suport tecnològic a empreses.
+- **Actividad:** empresa tecnológica que ofrece soluciones y servicios TIC a otras organizaciones.
+- **Servicios relacionados con el proyecto:** servicios IT, sistemas, virtualización, infraestructura, ciberseguridad y externalización de servicios informáticos.
+- **Relación con TecnoVal:** sirve de referencia para la oferta de mantenimiento y soporte tecnológico a empresas.
 - **Web:** [https://www.nunsys.com/soluciones/sistemas/servicios-it/](https://www.nunsys.com/soluciones/sistemas/servicios-it/)
 
 ### Ayesa
 
-- **Activitat:** empresa de serveis tecnològics i d'enginyeria.
-- **Serveis relacionats amb el projecte:** serveis de tecnologia i solucions digitals per a organitzacions.
-- **Relació amb TecnoVal:** serveix de referència general del sector dels serveis tecnològics empresarials, encara que la seua escala i àmbit són més amplis que els de l'empresa fictícia.
+- **Actividad:** empresa de servicios tecnológicos e ingeniería.
+- **Servicios relacionados con el proyecto:** servicios de tecnología y soluciones digitales para organizaciones.
+- **Relación con TecnoVal:** sirve de referencia general del sector de los servicios tecnológicos empresariales, aunque su escala y ámbito son más amplios que los de la empresa ficticia.
 - **Web:** [https://www.ayesa.com/home/](https://www.ayesa.com/home/)
 
-## 1.9. Resum
+## 1.9. Resumen
 
-TecnoVal Assistència IT és una empresa fictícia de serveis informàtics situada a València, amb 12 treballadors i una facturació anual estimada de 650.000 €. Ofereix suport tècnic, manteniment, instal·lació de xarxes i assessorament bàsic en seguretat a petites i mitjanes empreses. La seua prioritat és oferir un servei pròxim, preventiu i adaptat a les necessitats de cada client.
+TecnoVal Asistencia IT es una empresa ficticia de servicios informáticos situada en Valencia, con 12 trabajadores y una facturación anual estimada de 650.000 €. Ofrece soporte técnico, mantenimiento, instalación de redes y asesoramiento básico en seguridad a pequeñas y medianas empresas. Su prioridad es ofrecer un servicio cercano, preventivo y adaptado a las necesidades de cada cliente.
