@@ -7,11 +7,9 @@
 - **Tipo de empresa:** empresa privada de servicios informáticos
 - **Ámbito de actuación:** Valencia y municipios próximos, con posibilidad de atender incidencias a distancia.
 
-TecnoVal Asistencia IT es una empresa ficticia creada para este proyecto. Su actividad se centra en ayudar a otras empresas a mantener sus equipos y sistemas informáticos en buen estado.
-
 ## 1.2. Actividad económica y sector
 
-La empresa pertenece al sector terciario, dentro del ámbito de las tecnologías de la información y la comunicación (TIC). Presta servicios de soporte técnico, mantenimiento informático, instalación y administración de redes y asesoramiento básico en seguridad informática.
+La empresa pertenece al sector terciario, en concreto de las tecnologías de la información y la comunicación. Presta servicios de soporte técnico, mantenimiento informático, instalación y administración de redes y asesoramiento básico en seguridad informática.
 
 ## 1.3. Productos y servicios
 
@@ -49,22 +47,20 @@ La distribución inicial es:
 - Sistemas y redes: 3 trabajadores.
 - Comercial: 1 trabajador.
 
-La distribución detallada se presenta en el documento [02-organizacion.md](02-organizacion.md).
+La distribución esta en el siguiente documento: [02-organizacion.md](02-organizacion.md).
 
 ## 1.6. Estimación del volumen de negocio anual
 
-Se estima un volumen de negocio anual de **650.000 €**. Esta cifra es una hipótesis de trabajo para el proyecto, no un dato real de una empresa existente.
+Se estima un volumen de negocio anual de **650€**.
 
-Una justificación orientativa es la combinación de contratos de mantenimiento periódico, asistencias técnicas puntuales y proyectos de instalación o renovación de redes. Por ejemplo, una cartera de clientes con contratos mensuales aporta ingresos recurrentes, mientras que las intervenciones e instalaciones generan ingresos adicionales.
-
-La cifra debe considerarse una estimación académica que el equipo puede ajustar si cambia el número de clientes, los servicios o la plantilla.
+La cifra esta se considera una estimación ya que que el equipo puede ajustar si cambia el número de clientes, los servicios o la plantilla.
 
 ## 1.7. Estrategia para responder a las necesidades de los clientes
 
-La estrategia de la empresa se basa en:
+La estrategia de la empresa es:
 
 1. **Atención cercana:** cada cliente puede comunicar las incidencias por teléfono o correo electrónico.
-2. **Respuesta planificada:** las incidencias se clasifican según su urgencia y el impacto en la actividad del cliente.
+2. **Respuesta planificada:** las incidencias se atenderan según su urgencia del cliente.
 3. **Mantenimiento preventivo:** se programan revisiones para detectar problemas antes de que provoquen una avería.
 4. **Soluciones adaptadas:** los recursos y servicios se proponen según el tamaño y las necesidades de cada cliente.
 5. **Protección de los datos:** se recomiendan actualizaciones, copias de seguridad y buenas prácticas de seguridad.
@@ -90,4 +86,4 @@ Esta estrategia permite reducir el tiempo de inactividad de los clientes y ofrec
 
 ## 1.9. Resumen
 
-TecnoVal Asistencia IT es una empresa ficticia de servicios informáticos situada en Valencia, con 12 trabajadores y una facturación anual estimada de 650.000 €. Ofrece soporte técnico, mantenimiento, instalación de redes y asesoramiento básico en seguridad a pequeñas y medianas empresas. Su prioridad es ofrecer un servicio cercano, preventivo y adaptado a las necesidades de cada cliente.
+TecnoVal Asistencia IT es una empresa ficticia de servicios informáticos situada en Valencia, con 12 trabajadores y una facturación anual aproximadamente de 650€. Ofrece soporte técnico, mantenimiento, instalación de redes y asesoramiento básico en seguridad a pequeñas y medianas empresas. Su prioridad es ofrecer un servicio cercano, preventivo y adaptado a las necesidades de cada cliente.
