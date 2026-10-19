@@ -1,35 +1,35 @@
-# 5. Contribució als Objectius de Desenvolupament Sostenible (ODS)
+# 5. Contribución a los Objetivos de Desarrollo Sostenible (ODS)
 
-TecnoVal Assistència IT pot contribuir a diversos Objectius de Desenvolupament Sostenible mitjançant la manera de prestar els seus serveis i de gestionar els recursos tecnològics.
+TecnoVal Asistencia IT puede contribuir a varios Objetivos de Desarrollo Sostenible mediante la forma de prestar sus servicios y de gestionar los recursos tecnológicos.
 
-## ODS 8. Treball digne i creixement econòmic
+## ODS 8. Trabajo decente y crecimiento económico
 
-**Relació amb l'empresa**
+**Relación con la empresa**
 
-L'empresa ofereix serveis informàtics a altres negocis i contribueix al seu funcionament, ja que ajuda a reduir les interrupcions causades per avaries i problemes tècnics. També necessita personal amb coneixements tècnics i possibilitats de formació contínua.
+La empresa ofrece servicios informáticos a otros negocios y contribuye a su funcionamiento, ya que ayuda a reducir las interrupciones causadas por averías y problemas técnicos. También necesita personal con conocimientos técnicos y posibilidades de formación continua.
 
-**Mesura concreta**
+**Medida concreta**
 
-Establir un pla anual de formació per als treballadors, amb temps reservat per actualitzar els coneixements sobre sistemes operatius, xarxes, atenció al client i seguretat informàtica.
+Establecer un plan anual de formación para los trabajadores, con tiempo reservado para actualizar los conocimientos sobre sistemas operativos, redes, atención al cliente y seguridad informática.
 
-**Com es podria comprovar**
+**Cómo se podría comprobar**
 
-Registrar les hores de formació realitzades per cada treballador i revisar anualment si s'ha complit el pla.
+Registrar las horas de formación realizadas por cada trabajador y revisar anualmente si se ha cumplido el plan.
 
-## ODS 12. Producció i consum responsables
+## ODS 12. Producción y consumo responsables
 
-**Relació amb l'empresa**
+**Relación con la empresa**
 
-Els ordinadors i altres dispositius electrònics poden generar residus quan es retiren abans d'hora o es rebutgen sense una gestió adequada. Com que TecnoVal es dedica al manteniment informàtic, pot allargar la vida útil dels equips i promoure una gestió responsable dels residus electrònics.
+Los ordenadores y otros dispositivos electrónicos pueden generar residuos cuando se retiran antes de tiempo o se desechan sin una gestión adecuada. Como TecnoVal se dedica al mantenimiento informático, puede alargar la vida útil de los equipos y promover una gestión responsable de los residuos electrónicos.
 
-**Mesura concreta**
+**Medida concreta**
 
-Prioritzar la reparació i reutilització dels equips quan siga tècnicament viable i entregar els dispositius que ja no es puguen aprofitar a un gestor autoritzat de residus electrònics.
+Priorizar la reparación y reutilización de los equipos cuando sea técnicamente viable y entregar los dispositivos que ya no se puedan aprovechar a un gestor autorizado de residuos electrónicos.
 
-**Com es podria comprovar**
+**Cómo se podría comprobar**
 
-Portar un registre dels equips reparats, reutilitzats i entregats per a una gestió adequada al final de la seua vida útil.
+Llevar un registro de los equipos reparados, reutilizados y entregados para una gestión adecuada al final de su vida útil.
 
-## Conclusió
+## Conclusión
 
-Els ODS 8 i 12 estan relacionats amb l'activitat de TecnoVal Assistència IT. La formació contínua ajuda a millorar les competències dels treballadors i la qualitat del servei, mentre que la reparació i la gestió responsable dels dispositius contribueixen a reduir els residus electrònics.
+Los ODS 8 y 12 están relacionados con la actividad de TecnoVal Asistencia IT. La formación continua ayuda a mejorar las competencias de los trabajadores y la calidad del servicio, mientras que la reparación y la gestión responsable de los dispositivos contribuyen a reducir los residuos electrónicos.
