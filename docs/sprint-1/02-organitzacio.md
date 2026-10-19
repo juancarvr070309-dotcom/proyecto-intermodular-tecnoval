@@ -1,74 +1,74 @@
-# 2. Departaments i estructura organitzativa
+# 2. Departamentos y estructura organizativa
 
-## 2.1. Organització interna
+## 2.1. Organización interna
 
-TecnoVal Assistència IT té una plantilla fictícia de 12 treballadors. L'empresa es divideix en cinc àrees: direcció, administració i atenció al client, suport tècnic, sistemes i xarxes, i comercial.
+TecnoVal Asistencia IT tiene una plantilla ficticia de 12 trabajadores. La empresa se divide en cinco áreas: dirección, administración y atención al cliente, soporte técnico, sistemas y redes, y comercial.
 
-## 2.2. Departaments, funcions i nombre de treballadors
+## 2.2. Departamentos, funciones y número de trabajadores
 
-| Departament | Treballadors | Funcions principals |
+| Departamento | Trabajadores | Funciones principales |
 |---|---:|---|
-| Direcció | 1 | Coordinar l'empresa, prendre decisions, controlar els objectius i supervisar els resultats. |
-| Administració i atenció al client | 2 | Gestionar factures, pressupostos, cites, correus, contractes i registres d'incidències. |
-| Suport tècnic | 5 | Diagnosticar i resoldre avaries, preparar equips, instal·lar aplicacions i atendre els clients. |
-| Sistemes i xarxes | 3 | Configurar xarxes, administrar servidors, gestionar còpies de seguretat i aplicar mesures de seguretat. |
-| Comercial | 1 | Buscar clients, presentar serveis, preparar propostes comercials i fer seguiment de les oportunitats. |
+| Dirección | 1 | Coordinar la empresa, tomar decisiones, controlar los objetivos y supervisar los resultados. |
+| Administración y atención al cliente | 2 | Gestionar facturas, presupuestos, citas, correos, contratos y registros de incidencias. |
+| Soporte técnico | 5 | Diagnosticar y resolver averías, preparar equipos, instalar aplicaciones y atender a los clientes. |
+| Sistemas y redes | 3 | Configurar redes, administrar servidores, gestionar copias de seguridad y aplicar medidas de seguridad. |
+| Comercial | 1 | Buscar clientes, presentar servicios, preparar propuestas comerciales y hacer seguimiento de las oportunidades. |
 | **Total** | **12** | |
 
-## 2.3. Llocs de treball i responsabilitats
+## 2.3. Puestos de trabajo y responsabilidades
 
-### Direcció — 1 persona
+### Dirección — 1 persona
 
-- Organitza el treball dels departaments.
-- Decideix les prioritats i els objectius.
-- Supervisa els resultats econòmics i la qualitat del servei.
-- Aprova les compres importants i els contractes.
+- Organiza el trabajo de los departamentos.
+- Decide las prioridades y los objetivos.
+- Supervisa los resultados económicos y la calidad del servicio.
+- Aprueba las compras importantes y los contratos.
 
-### Administració i atenció al client — 2 persones
+### Administración y atención al cliente — 2 personas
 
-- Registra les sol·licituds dels clients.
-- Organitza les cites dels tècnics.
-- Gestiona factures, pressupostos i documentació.
-- Informa els clients sobre l'estat de les incidències.
+- Registra las solicitudes de los clientes.
+- Organiza las citas de los técnicos.
+- Gestiona facturas, presupuestos y documentación.
+- Informa a los clientes sobre el estado de las incidencias.
 
-### Suport tècnic — 5 persones
+### Soporte técnico — 5 personas
 
-- Revisa i repara ordinadors i perifèrics.
-- Instal·la sistemes operatius i aplicacions.
-- Atén incidències presencials i remotes.
-- Documenta les actuacions realitzades.
-- Deriva les incidències de xarxa o servidor al departament corresponent.
+- Revisa y repara ordenadores y periféricos.
+- Instala sistemas operativos y aplicaciones.
+- Atiende incidencias presenciales y remotas.
+- Documenta las actuaciones realizadas.
+- Deriva las incidencias de red o servidor al departamento correspondiente.
 
-### Sistemes i xarxes — 3 persones
+### Sistemas y redes — 3 personas
 
-- Configura routers, switches i punts d'accés.
-- Administra els servidors i els serveis compartits.
-- Configura i comprova les còpies de seguretat.
-- Gestiona els comptes, permisos i actualitzacions dels sistemes.
-- Dona suport a incidències tècniques complexes.
+- Configura routers, switches y puntos de acceso.
+- Administra los servidores y los servicios compartidos.
+- Configura y comprueba las copias de seguridad.
+- Gestiona las cuentas, los permisos y las actualizaciones de los sistemas.
+- Da soporte a incidencias técnicas complejas.
 
 ### Comercial — 1 persona
 
-- Contacta amb possibles clients.
-- Explica els serveis i prepara propostes.
-- Manté la relació comercial amb els clients.
-- Coordina amb direcció les necessitats i oportunitats de negoci.
+- Contacta con posibles clientes.
+- Explica los servicios y prepara propuestas.
+- Mantiene la relación comercial con los clientes.
+- Coordina con dirección las necesidades y oportunidades de negocio.
 
 ## 2.4. Organigrama
 
-El següent organigrama està escrit en Mermaid, un format de diagrames que GitHub pot mostrar dins dels fitxers Markdown.
+El siguiente organigrama está escrito en Mermaid, un formato de diagramas que GitHub puede mostrar dentro de los archivos Markdown.
 
 ```mermaid
 flowchart TD
-    A["Direcció (1)"]
-    A --> B["Administració i atenció al client (2)"]
-    A --> C["Suport tècnic (5)"]
-    A --> D["Sistemes i xarxes (3)"]
+    A["Dirección (1)"]
+    A --> B["Administración y atención al cliente (2)"]
+    A --> C["Soporte técnico (5)"]
+    A --> D["Sistemas y redes (3)"]
     A --> E["Comercial (1)"]
 ```
 
-## 2.5. Justificació de l'estructura
+## 2.5. Justificación de la estructura
 
-El departament de suport tècnic és el més nombrós perquè l'activitat principal de l'empresa és resoldre incidències i mantindre equips informàtics de clients diferents. Sistemes i xarxes necessita personal especialitzat per a les tasques de servidor, connectivitat i còpies de seguretat. Administració i atenció al client organitza les peticions i la documentació, mentre que la persona comercial busca nous contractes. La direcció coordina totes les àrees.
+El departamento de soporte técnico es el más numeroso porque la actividad principal de la empresa es resolver incidencias y mantener equipos informáticos de diferentes clientes. Sistemas y redes necesita personal especializado para las tareas de servidor, conectividad y copias de seguridad. Administración y atención al cliente organiza las peticiones y la documentación, mientras que la persona comercial busca nuevos contratos. La dirección coordina todas las áreas.
 
-Aquesta estructura és prou senzilla per a una empresa de 12 persones i està relacionada amb els serveis que ofereix.
+Esta estructura es suficientemente sencilla para una empresa de 12 personas y está relacionada con los servicios que ofrece.
