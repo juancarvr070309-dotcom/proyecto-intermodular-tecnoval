@@ -1,38 +1,38 @@
-# 4. Relació de maquinari i programari
+# 4. Relación de hardware y software
 
-La taula següent recull els principals recursos necessaris per al funcionament de TecnoVal Assistència IT. Les quantitats corresponen a una proposta inicial per a una plantilla de 12 persones. No s'especifiquen marques, models ni preus perquè aquesta selecció es farà en el Bloc 2.
+La siguiente tabla recoge los principales recursos necesarios para el funcionamiento de TecnoVal Asistencia IT. Las cantidades corresponden a una propuesta inicial para una plantilla de 12 personas. No se especifican marcas, modelos ni precios porque esta selección se realizará en el Bloque 2.
 
-| Recurs | Departament | Quantitat | Funció |
+| Recurso | Departamento | Cantidad | Función |
 |---|---|---:|---|
-| Ordinador de sobretaula o portàtil | Direcció | 1 | Gestió, informes i coordinació de l'empresa. |
-| Ordinador de sobretaula | Administració i atenció al client | 2 | Facturació, correu, cites i documentació. |
-| Ordinador de sobretaula o portàtil | Suport tècnic | 5 | Diagnòstic, configuració i manteniment d'equips. |
-| Ordinador de sobretaula o portàtil | Sistemes i xarxes | 3 | Administració de xarxes, servidors i còpies de seguretat. |
-| Ordinador portàtil | Comercial | 1 | Preparació de propostes i visites a clients. |
-| Ordinador portàtil de reserva | Compartit | 1 | Substitució temporal o treball fora de l'oficina. |
-| Servidor de fitxers | Sistemes i xarxes | 1 | Emmagatzematge compartit de documents. |
-| Servidor de còpies de seguretat | Sistemes i xarxes | 1 | Guardar còpies de les dades importants. |
-| Servidor de proves i gestió | Sistemes i xarxes | 1 | Proves de configuració i ferramentes internes. |
-| Router | Sistemes i xarxes | 1 | Connectar la xarxa interna amb Internet. |
-| Switch gestionable | Sistemes i xarxes | 2 | Connectar equips per cable i gestionar connexions. |
-| Punt d'accés Wi-Fi | Sistemes i xarxes | 2 | Proporcionar connectivitat sense fil. |
-| Tallafoc | Sistemes i xarxes | 1 | Filtrar el trànsit de xarxa segons les regles definides; pot estar integrat en un altre dispositiu. |
-| Impressora multifunció de xarxa | Administració | 1 | Imprimir i digitalitzar documents. |
-| Dispositiu de còpia externa | Sistemes i xarxes | 2 | Disposar de còpies addicionals de dades. |
-| Auriculars amb micròfon | Suport tècnic i atenció al client | 6 | Telefonades i suport remot. |
-| Programari ofimàtic | Tots els departaments | 12 | Crear documents, fulls de càlcul i presentacions. |
-| Sistema operatiu d'escriptori | Tots els departaments | 12 | Permetre l'ús dels ordinadors i les aplicacions. |
-| Programari de protecció d'equips | Tots els departaments | 12 | Detectar i reduir amenaces als ordinadors. |
-| Eina de suport remot | Suport tècnic | 5 | Diagnosticar incidències amb autorització del client. |
-| Sistema de gestió d'incidències | Suport tècnic i administració | 7 | Registrar, assignar i fer seguiment de les incidències. |
-| Correu electrònic corporatiu | Tots els departaments | 12 comptes | Comunicar-se amb clients i amb l'equip. |
-| Programari de còpies de seguretat | Sistemes i xarxes | 1 solució | Programar i verificar còpies de seguretat. |
-| Aplicació de facturació i gestió | Administració | 2 accessos | Gestionar factures, pressupostos i dades administratives. |
+| Ordenador de sobremesa o portátil | Dirección | 1 | Gestión, informes y coordinación de la empresa. |
+| Ordenador de sobremesa | Administración y atención al cliente | 2 | Facturación, correo, citas y documentación. |
+| Ordenador de sobremesa o portátil | Soporte técnico | 5 | Diagnóstico, configuración y mantenimiento de equipos. |
+| Ordenador de sobremesa o portátil | Sistemas y redes | 3 | Administración de redes, servidores y copias de seguridad. |
+| Ordenador portátil | Comercial | 1 | Preparación de propuestas y visitas a clientes. |
+| Ordenador portátil de reserva | Compartido | 1 | Sustitución temporal o trabajo fuera de la oficina. |
+| Servidor de archivos | Sistemas y redes | 1 | Almacenamiento compartido de documentos. |
+| Servidor de copias de seguridad | Sistemas y redes | 1 | Guardar copias de los datos importantes. |
+| Servidor de pruebas y gestión | Sistemas y redes | 1 | Pruebas de configuración y herramientas internas. |
+| Router | Sistemas y redes | 1 | Conectar la red interna con Internet. |
+| Switch gestionable | Sistemas y redes | 2 | Conectar equipos por cable y gestionar conexiones. |
+| Punto de acceso Wi-Fi | Sistemas y redes | 2 | Proporcionar conectividad inalámbrica. |
+| Cortafuegos | Sistemas y redes | 1 | Filtrar el tráfico de red según las reglas definidas; puede estar integrado en otro dispositivo. |
+| Impresora multifunción de red | Administración | 1 | Imprimir y digitalizar documentos. |
+| Dispositivo de copia externa | Sistemas y redes | 2 | Disponer de copias adicionales de datos. |
+| Auriculares con micrófono | Soporte técnico y atención al cliente | 6 | Llamadas telefónicas y soporte remoto. |
+| Software ofimático | Todos los departamentos | 12 | Crear documentos, hojas de cálculo y presentaciones. |
+| Sistema operativo de escritorio | Todos los departamentos | 12 | Permitir el uso de los ordenadores y las aplicaciones. |
+| Software de protección de equipos | Todos los departamentos | 12 | Detectar y reducir amenazas en los ordenadores. |
+| Herramienta de soporte remoto | Soporte técnico | 5 | Diagnosticar incidencias con la autorización del cliente. |
+| Sistema de gestión de incidencias | Soporte técnico y administración | 7 | Registrar, asignar y hacer seguimiento de las incidencias. |
+| Correo electrónico corporativo | Todos los departamentos | 12 cuentas | Comunicarse con los clientes y con el equipo. |
+| Software de copias de seguridad | Sistemas y redes | 1 solución | Programar y verificar copias de seguridad. |
+| Aplicación de facturación y gestión | Administración | 2 accesos | Gestionar facturas, presupuestos y datos administrativos. |
 
-## Justificació
+## Justificación
 
-Els recursos s'han triat segons les funcions de cada departament. El suport tècnic necessita eines per a diagnosticar incidències; sistemes i xarxes necessita accés administratiu als servidors i als dispositius de xarxa; i administració necessita aplicacions de gestió documental i facturació.
+Los recursos se han elegido según las funciones de cada departamento. El soporte técnico necesita herramientas para diagnosticar incidencias; sistemas y redes necesita acceso administrativo a los servidores y a los dispositivos de red; y administración necesita aplicaciones de gestión documental y facturación.
 
-Els recursos compartits, com la impressora i els servidors, eviten haver de disposar d'un dispositiu independent per a cada treballador. Les eines de protecció i de còpies de seguretat contribueixen a mantindre la informació disponible i protegida.
+Los recursos compartidos, como la impresora y los servidores, evitan tener que disponer de un dispositivo independiente para cada trabajador. Las herramientas de protección y de copias de seguridad contribuyen a mantener la información disponible y protegida.
 
-Les quantitats són orientatives. En el Bloc 2 es revisaran les característiques tècniques, les possibles llicències, els preus i la configuració definitiva.
+Las cantidades son orientativas. En el Bloque 2 se revisarán las características técnicas, las posibles licencias, los precios y la configuración definitiva.
