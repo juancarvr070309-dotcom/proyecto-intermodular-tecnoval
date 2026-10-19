@@ -1,29 +1,27 @@
-# TecnoVal Assistència IT
+# TecnoVal Asistencia IT
 
-## Presentació del projecte
+## Presentación del proyecto
 
-Aquest repositori conté la documentació del Sprint 1 del Projecte Intermodular de 2n SMX. L'empresa **TecnoVal Assistència IT** és una empresa fictícia ubicada a València que ofereix serveis de suport informàtic, manteniment d'equips, administració de xarxes i assessorament bàsic en ciberseguretat a petites i mitjanes empreses.
+La empresa **TecnoVal Asistencia IT** es una empresa ficticia ubicada en Valencia que ofrece servicios de soporte informático, mantenimiento de equipos, administración de redes y asesoramiento básico en ciberseguridad a pequeñas y medianas empresas.
 
-L'objectiu és definir l'empresa, la seua organització i els recursos humans i tecnològics necessaris. Les dades econòmiques i de plantilla són estimacions fictícies elaborades amb finalitats acadèmiques.
+El objetivo es definir la empresa, su organización y los recursos humanos y tecnológicos necesarios. Los datos económicos y de plantilla son estimaciones ficticias elaboradas con fines académicos.
 
-## Integrants de l'equip
+## Integrantes del trabjo
 
-- [Nom i cognoms de l'integrant 1]
-- [Nom i cognoms de l'integrant 2]
-- [Nom i cognoms de l'integrant 3]
-- [Afegiu o elimineu línies segons l'equip]
+- Juan Carlos Vasconez Rojas
+- Isaac Matias Beltran Moreno
 
-## Documentació del Sprint 1
+## Sprint 1
 
-1. [Definició i caracterització de l'empresa](docs/sprint-1/01-empresa.md)
-2. [Departaments i estructura organitzativa](docs/sprint-1/02-organitzacio.md)
-3. [Identificació dels recursos TIC](docs/sprint-1/03-recursos-tic.md)
-4. [Relació de maquinari i programari](docs/sprint-1/04-maquinari-programari.md)
-5. [Contribució als ODS](docs/sprint-1/05-ods.md)
+1. [Definición y caracterización de la empresa](docs/sprint-1/01-empresa.md)
+2. [Departamentos y estructura organizativa](docs/sprint-1/02-organitzacio.md)
+3. [Identificación de los recursos TIC](docs/sprint-1/03-recursos-tic.md)
+4. [Relación de hardware y software](docs/sprint-1/04-maquinari-programari.md)
+5. [Contribución a los ODS](docs/sprint-1/05-ods.md)
 
-## Estructura del repositori
+## Estructura del repositorio
 
-\`\`\`text
+```text
 proyecto-intermodular-tecnoval/
 ├── README.md
 ├── docs/
@@ -35,15 +33,3 @@ proyecto-intermodular-tecnoval/
 │       └── 05-ods.md
 └── img/
     └── README.md
-\`\`\`
-
-## Estat del projecte
-
-- [x] Estructura inicial del repositori
-- [x] Documentació inicial del Sprint 1
-- [ ] Revisió de l'equip i verificació de les dades
-- [ ] Afegir els noms reals dels integrants
-- [ ] Revisar l'accés del professorat al repositori privat
-
----
-**Nota:** TecnoVal Assistència IT és una empresa inventada. Les empreses de referència i els enllaços web són reals.
