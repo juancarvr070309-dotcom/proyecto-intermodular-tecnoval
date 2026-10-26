@@ -56,16 +56,8 @@ TecnoVal Asistencia IT tiene una plantilla ficticia de 12 trabajadores. La empre
 
 ## 2.4. Organigrama
 
-El siguiente organigrama está escrito en Mermaid, un formato de diagramas que GitHub puede mostrar dentro de los archivos Markdown.
+<img width="806" height="287" alt="ORGANIGRAMA" src="https://github.com/user-attachments/assets/fc8ec168-601d-4050-bab0-e6d77bf340fc" />
 
-```mermaid
-flowchart TD
-    A["Dirección (1)"]
-    A --> B["Administración y atención al cliente (2)"]
-    A --> C["Soporte técnico (5)"]
-    A --> D["Sistemas y redes (3)"]
-    A --> E["Comercial (1)"]
-```
 
 ## 2.5. Justificación de la estructura
 
