@@ -36,8 +36,14 @@ Se comparan alternativas teniendo en cuenta coste aproximado, facilidad de admin
 - **Servidor propio en DMZ:** mayor control, pero exige actualizaciones, monitorización y protección constante.
 - **Decisión:** alojamiento externo al principio. La DMZ queda diseñada para un futuro servidor propio.
 
-## 2.4. Aspecto innovador
-La propuesta incorpora virtualización y segmentación mediante VLAN. La virtualización permite crear entornos de pruebas aislados para validar cambios antes de aplicarlos. Las VLAN separan usuarios, servidores, administración, impresoras, invitados y DMZ. Esto facilita la gestión y mejora el control de acceso.
+## 2.4. Aspecto innovador y aplicación
+La propuesta incorpora virtualización y segmentación mediante VLAN. La innovación no consiste en utilizar una tecnología nueva, sino en aplicar estas tecnologías de forma integrada y adecuada al tamaño de TecnoVal.
+
+- **Entornos de prueba virtualizados:** se crearán máquinas virtuales aisladas para probar actualizaciones, configuraciones y cambios de servicios antes de aplicarlos al entorno de producción. Después de cada prueba se registrarán el resultado y las incidencias.
+- **Segmentación mediante VLAN:** usuarios, servidores, gestión, impresoras, invitados y DMZ se separan lógicamente. El firewall permitirá únicamente el tráfico necesario entre zonas.
+- **Mejora continua:** la documentación de pruebas y las copias verificadas facilitarán recuperar servicios y evitar que un cambio no probado afecte a toda la empresa.
+
+La aplicación se realizará por fases y queda condicionada a la compra del equipamiento y a la formación del equipo técnico.
 
 ## 2.5. Viabilidad
 
@@ -52,8 +58,13 @@ La propuesta incorpora virtualización y segmentación mediante VLAN. La virtual
 ## 2.6. Conclusión
 Se selecciona una solución híbrida y escalable: red gestionable segmentada, firewall, dos hosts de virtualización, NAS con copia externa y alojamiento web externo inicialmente. Es equilibrada para 12 personas si se confirma el presupuesto y se asigna tiempo de mantenimiento.
 
-## 2.7. Fuentes
-- [QNAP TS-464 – catálogo y precio de referencia en Senetic](https://www.senetic.es/).
-- [TP-Link Omada – catálogo de switches en Mauser](https://mauser.es/informatica-y-telecomunicaciones/redes/tp-link-omada).
-- [VirtualBox – documentación oficial](https://www.virtualbox.org/wiki/Documentation).
+## 2.7. Fuentes técnicas y comerciales
+Las fuentes técnicas respaldan las funciones propuestas; las fuentes comerciales sirven como referencia inicial y no equivalen a una oferta formal. Antes de la compra se comprobarán modelo exacto, disponibilidad, precio final, IVA, transporte y garantía.
+
+- [QNAP TS-464 – ficha del fabricante](https://www.qnap.com/en/product/ts-464).
+- [Senetic – catálogo de NAS](https://www.senetic.es/). La página del catálogo se utiliza solo como referencia comercial; el precio del presupuesto es orientativo y debe verificarse en la ficha vigente del producto.
+- [TP-Link TL-SG3428 – ficha del fabricante](https://www.tp-link.com/es/business-networking/omada-switch-smart/tl-sg3428/).
+- [Mauser – catálogo TP-Link Omada](https://mauser.es/informatica-y-telecomunicaciones/redes/tp-link-omada). El precio citado debe confirmarse en una ficha o presupuesto del modelo exacto.
 - [Proxmox VE – documentación oficial](https://pve.proxmox.com/pve-docs/).
+- [Proxmox VE – opciones de suscripción](https://www.proxmox.com/en/proxmox-virtual-environment/pricing).
+- [VirtualBox – documentación oficial](https://www.virtualbox.org/wiki/Documentation).
