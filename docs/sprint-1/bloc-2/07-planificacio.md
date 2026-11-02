@@ -60,8 +60,7 @@ El seguimiento consiste en mover cada tarjeta a la lista que corresponda conform
 
 **Enlace al tablero:** [Abrir Trello](https://trello.com/b/PPo2BEAZ/proyecto-intermodular-tecnoval-assistencia-it-juan-carlos-isaac-beltran).
 
-La captura debe actualizarse manualmente cuando el equipo haya movido las tarjetas y asignado responsables. La imagen que se conserva en el repositorio es una evidencia anterior y no debe presentarse como reflejo de los estados nuevos.
-
+La captura
 
 ## 7.6. Criterio de finalización
 
