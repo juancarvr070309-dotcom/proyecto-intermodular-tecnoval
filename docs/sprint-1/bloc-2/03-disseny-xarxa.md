@@ -13,6 +13,7 @@ El diseño utiliza una topología en estrella: los equipos se conectan a switche
 | Switch gestionable principal | 1 | Conectar servidores y distribuir VLAN. |
 | Switch gestionable de acceso | 1 | Conectar puestos, impresora y puntos de acceso. |
 | Hosts de virtualización | 2 | Ejecutar servicios internos en máquinas virtuales separadas. |
+| Servidor de comunicaciones (VM) | 1 lógico | Proporcionar los servicios internos de comunicación de red previstos (por ejemplo, DNS y DHCP, si se centralizan en servidor); estará alojado en uno de los hosts y ubicado en VLAN 20. |
 | NAS de copias | 1 | Guardar copias de seguridad. |
 | Puntos de acceso Wi-Fi | 2 | Wi-Fi corporativo y de invitados con redes separadas. |
 | Impresora multifunción | 1 | Impresión y digitalización compartidas. |
@@ -22,7 +23,7 @@ El diseño utiliza una topología en estrella: los equipos se conectan a switche
 ## 3.3. Zonas y conexiones
 - **Internet:** conexión del proveedor hacia el firewall.
 - **Red interna:** ordenadores de departamentos y recursos internos.
-- **Red de servidores:** máquinas virtuales de archivos, gestión y pruebas.
+- **Red de servidores (VLAN 20):** máquinas virtuales de archivos, gestión/pruebas y el servidor lógico de comunicaciones (DNS/DHCP, si se despliegan estos servicios). El servidor de comunicaciones es una función lógica, no un tercer equipo físico; se ejecutará en uno de los dos hosts. 
 - **DMZ:** zona separada para servicios accesibles desde Internet, como un servidor web propio. No tendrá acceso libre a la red interna.
 - **Red de gestión:** acceso administrativo restringido a dispositivos de red y servidores.
 - **Wi-Fi de invitados:** acceso a Internet sin acceso a equipos, impresoras ni servidores internos.
@@ -32,7 +33,12 @@ La DMZ se reserva para un servidor web público si se decide alojar la web en la
 
 Como la alternativa seleccionada es contratar alojamiento web externo, la DMZ puede permanecer preparada sin servidor público propio durante la primera fase. No se publicará un servidor interno directamente en Internet.
 
-## 3.5. Decisiones técnicas
+## 3.5. Servidor de comunicaciones
+El diseño contempla un servidor lógico de comunicaciones dentro de la red de servidores (VLAN 20), con dirección reservada en el plan IP. Su función prevista es centralizar servicios de infraestructura como DNS interno y, si se decide administrarlo desde servidor, DHCP para las redes que lo permitan. El DHCP no se extenderá automáticamente a otras VLAN: cuando el servidor esté en una subred distinta de los clientes, se configurará DHCP relay en el equipo de capa 3/firewall y se definirán los ámbitos correspondientes. Si el firewall/router presta estos servicios, se documentará esa decisión y el servidor lógico podrá destinarse a DNS y gestión.
+
+La administración del servidor solo se permitirá desde la VLAN 40. No se publicará directamente en Internet.
+
+## 3.6. Decisiones técnicas
 1. Switches gestionables para configurar VLAN.
 2. Separar usuarios, servidores, impresoras, gestión, invitados y DMZ.
 3. Centralizar en el firewall el enrutamiento y las reglas.
@@ -41,7 +47,7 @@ Como la alternativa seleccionada es contratar alojamiento web externo, la DMZ pu
 6. NAS de copias con acceso restringido.
 7. Documentar reglas, conexiones y direcciones IP.
 
-## 3.6. Fuentes técnicas
+## 3.7. Fuentes técnicas
 - [IEEE 802.1Q – estándar de VLAN](https://standards.ieee.org/ieee/802.1Q/6844/).
 - [Cisco – VLAN y redes LAN](https://www.cisco.com/c/en/us/solutions/enterprise-networks/what-is-a-lan-local-area-network.html).
 - [NIST SP 800-41 Rev. 1 – Guidelines on Firewalls and Firewall Policy](https://csrc.nist.gov/pubs/sp/800/41/r1/final).
