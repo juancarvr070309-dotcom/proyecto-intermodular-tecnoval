@@ -8,7 +8,7 @@ Se utiliza direccionamiento IPv4 privado dentro del rango 192.168.0.0/16. Cada z
 | Zona / equipos | Red | Máscara / prefijo | Gateway | Rango previsto / ejemplos |
 |---|---|---|---|---|
 | Usuarios y departamentos (VLAN 10) | 192.168.10.0 | 255.255.255.0 (/24) | 192.168.10.1 | DHCP 192.168.10.50–192.168.10.199 |
-| Servidores internos (VLAN 20) | 192.168.20.0 | 255.255.255.0 (/24) | 192.168.20.1 | Estáticas 192.168.20.10–192.168.20.49 |
+| Servidores internos (VLAN 20) | 192.168.20.0 | 255.255.255.0 (/24) | 192.168.20.1 | Servidor de comunicaciones 192.168.20.10; VM archivos 192.168.20.11; VM gestión/pruebas 192.168.20.12; otras estáticas 192.168.20.13–192.168.20.49 |
 | DMZ (VLAN 30) | 192.168.30.0 | 255.255.255.0 (/24) | 192.168.30.1 | Servidor web 192.168.30.10 |
 | Gestión de red (VLAN 40) | 192.168.40.0 | 255.255.255.0 (/24) | 192.168.40.1 | Gestión 192.168.40.10–192.168.40.49 |
 | Impresoras (VLAN 50) | 192.168.50.0 | 255.255.255.0 (/24) | 192.168.50.1 | Impresora 192.168.50.10 |
@@ -16,7 +16,8 @@ Se utiliza direccionamiento IPv4 privado dentro del rango 192.168.0.0/16. Cada z
 
 ## 4.3. Asignación
 - Las puertas de enlace terminan en .1 en cada subred.
-- Servidores, switches, puntos de acceso e impresora tendrán direcciones reservadas o estáticas fuera de los rangos DHCP.
+- Servidores, switches, puntos de acceso e impresora tendrán direcciones reservadas o estáticas fuera de los rangos DHCP. El servidor lógico de comunicaciones se reserva en 192.168.20.10; los servicios adicionales tendrán direcciones documentadas en el inventario.
+- La asignación propuesta no implica que los servicios estén instalados todavía; deberá comprobarse antes de desplegarlos.
 - Los ordenadores recibirán dirección por DHCP.
 - La red de invitados solo tendrá acceso a Internet.
 - La DMZ no tendrá acceso libre a las redes internas.
