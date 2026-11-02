@@ -40,13 +40,13 @@ El equipo de implantación planifica y ejecuta el proyecto. No debe confundirse 
 
 | Rol | Persona propuesta | Responsabilidades |
 |---|---|---|
-| Coordinación del proyecto | Juan Carlos Vasconez Rojas | Organizar tareas, revisar entregables, controlar fechas y coordinar. |
-| Responsable de redes | Isaac Matias Beltran Moreno | Diseñar topología, VLAN, direccionamiento IP y reglas. |
-| Responsable de sistemas | Integrante del equipo técnico | Proponer servidores, virtualización, usuarios y almacenamiento. |
-| Responsable de seguridad y pruebas | Integrante del equipo técnico | Revisar permisos, firewall, copias y pruebas. |
-| Documentación | Ambos integrantes | Mantener documentos, fuentes, decisiones y evidencias. |
+| Coordinación y seguimiento | Juan Carlos Vasconez Rojas | Organizar fases y tareas, controlar fechas, revisar entregables y coordinar la comunicación del equipo. |
+| Responsable de redes | Isaac Matias Beltran Moreno | Diseñar topología, VLAN, direccionamiento IP, conexiones y reglas de segmentación. |
+| Responsable de sistemas e implantación | Isaac Matias Beltran Moreno, en coordinación con Juan Carlos | Definir hosts, máquinas virtuales, usuarios, almacenamiento y servicios de comunicaciones; preparar el plan de despliegue. |
+| Responsable de seguridad y pruebas | Juan Carlos Vasconez Rojas, con revisión de Isaac | Comprobar permisos, reglas de firewall, aislamiento de VLAN, copias y pruebas de recuperación. |
+| Documentación y evidencias | Ambos integrantes | Mantener los documentos Markdown, fuentes, decisiones, diagrama, registro de cambios y evidencias de revisión. |
 
-Los roles técnicos adicionales son funciones asignables dentro del equipo del proyecto; no representan nuevas contrataciones ni alteran la plantilla ficticia de 12 empleados.
+Estas responsabilidades son una propuesta para el equipo de dos integrantes y pueden ajustarse por acuerdo. Se refieren al trabajo de implantación del proyecto, no a los puestos habituales de la plantilla ficticia de 12 trabajadores; no implican nuevas contrataciones.
 
 ## 5.4. Justificación
 La selección cubre los puestos existentes, conectividad, servicios internos y seguridad. Se priorizan tecnologías gestionables y soluciones ampliables. Las licencias comerciales se contratarán únicamente cuando sean necesarias y se incorporarán al presupuesto definitivo.
