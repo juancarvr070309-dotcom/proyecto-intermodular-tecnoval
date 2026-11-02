@@ -45,7 +45,17 @@ Se muestran importes con IVA incluido cuando la fuente lo indica. Para partidas 
 
 Los precios publicados ya incluyen IVA cuando la tienda lo especifica. Las partidas estimadas se han expresado como importes finales orientativos con IVA incluido para facilitar la comparación. Antes de comprar se debe solicitar presupuesto desglosado con base imponible, IVA, transporte, instalación y garantía.
 
-## 6.5. Justificación económica
+## 6.5. Justificación económica y viabilidad por fases
+El total de 19.048,61 € es una estimación de inversión inicial, no una compra aprobada. La empresa ficticia tiene 12 trabajadores, pero no se ha definido una facturación, beneficio ni tesorería real; por tanto, no sería correcto afirmar que puede pagar todo el importe de una sola vez. La viabilidad económica queda condicionada a la aprobación de Dirección, a comparar ofertas y a confirmar el presupuesto disponible.
+
+Se propone implantar por fases para repartir la inversión y priorizar la continuidad del negocio:
+
+1. **Fase prioritaria:** firewall/router, switches gestionables, cableado esencial y puestos que realmente necesiten renovación. Confirmar primero el inventario del Bloque 1 para evitar comprar ordenadores duplicados.
+2. **Fase de servicios y protección:** hosts de virtualización, NAS, SAI y solución de copias; realizar pruebas de restauración antes de considerar el servicio operativo.
+3. **Fase de ampliación:** puntos de acceso, equipo de reserva, mejoras de seguridad y servicios opcionales, según necesidad y presupuesto aprobado.
+
+La compra por fases puede reducir el desembolso inmediato, pero no reduce por sí misma el coste total estimado. Cada fase debe contar con financiación y revisión de precios.
+
 - Los 12 ordenadores corresponden a los 12 trabajadores definidos en el Bloque 1.
 - El portátil adicional es de reserva y no sustituye ningún puesto fijo.
 - Los dos hosts permiten virtualizar archivos, pruebas y gestión; el NAS se dedica a copias.
