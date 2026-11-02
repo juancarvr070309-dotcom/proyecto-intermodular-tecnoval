@@ -47,13 +47,13 @@ La distribución inicial es:
 - Sistemas y redes: 3 trabajadores.
 - Comercial: 1 trabajador.
 
-La distribución esta en el siguiente documento: [02-organizacion.md](02-organizacion.md).
+La distribución esta en el siguiente documento: [02-organitzacio.md](02-organitzacio.md).
 
 ## 1.6. Estimación del volumen de negocio anual
 
-Se estima un volumen de negocio anual de **650€**.
+Se estima un volumen de negocio anual de **650.000 €**.
 
-La cifra esta se considera una estimación ya que que el equipo puede ajustar si cambia el número de clientes, los servicios o la plantilla.
+La cifra es una estimación ficticia que puede ajustarse si cambia el número de clientes, los servicios o la plantilla.
 
 ## 1.7. Estrategia para responder a las necesidades de los clientes
 
@@ -86,4 +86,4 @@ Esta estrategia permite reducir el tiempo de inactividad de los clientes y ofrec
 
 ## 1.9. Resumen
 
-TecnoVal Asistencia IT es una empresa ficticia de servicios informáticos situada en Valencia, con 12 trabajadores y una facturación anual aproximadamente de 650€. Ofrece soporte técnico, mantenimiento, instalación de redes y asesoramiento básico en seguridad a pequeñas y medianas empresas. Su prioridad es ofrecer un servicio cercano, preventivo y adaptado a las necesidades de cada cliente.
+TecnoVal Asistencia IT es una empresa ficticia de servicios informáticos situada en Valencia, con 12 trabajadores y una facturación anual aproximada de 650.000 €. Ofrece soporte técnico, mantenimiento, instalación de redes y asesoramiento básico en seguridad a pequeñas y medianas empresas. Su prioridad es ofrecer un servicio cercano, preventivo y adaptado a las necesidades de cada cliente.
