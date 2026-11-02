@@ -8,14 +8,15 @@ Las cantidades se ajustan a los 12 trabajadores y a los recursos definidos en el
 |---|---:|---|---|---|
 | Ordenadores profesionales | 12 | Puestos de trabajo | CPU de oficina actual, 16 GB RAM, SSD 512 GB, Ethernet Gigabit | Uno por trabajador. |
 | Portátil de reserva | 1 | Sustitución y movilidad | 16 GB RAM, SSD 512 GB y Wi-Fi | Sustitución temporal. |
-| Hosts de virtualización | 2 | Ejecutar máquinas virtuales | CPU multinúcleo, 32–64 GB RAM ampliables, SSD y red Gigabit | Separar servicios y facilitar recuperación. |
+| Hosts de virtualización | 2 | Ejecutar máquinas virtuales | CPU multinúcleo, 32–64 GB RAM ampliables, SSD y red Gigabit; compatibilidad con virtualización asistida por hardware | Alojar servicios separados y facilitar recuperación. |
+| Servidor lógico de comunicaciones | 1 VM | DNS interno y, si se decide, servicios DHCP/infraestructura | VM dimensionada según número de clientes; IP fija/reservada, actualizaciones, registro y copia de configuración | Centralizar servicios de red. No es un equipo físico adicional: se ejecuta sobre uno de los dos hosts. |
 | NAS para copias | 1 | Copias de seguridad | RAID, discos NAS, snapshots y acceso restringido | Centraliza copias. |
-| Switch gestionable 24 puertos | 2 | Conectar puestos y servidores | Gigabit, VLAN 802.1Q, QoS y gestión | Segmentación y ampliación. |
+| Switch gestionable 24 puertos | 2 | Conectar puestos y servidores | Gigabit, VLAN 802.1Q, QoS y gestión; enlaces troncales entre switches y hacia el firewall | Segmentación y ampliación. |
 | Firewall/router | 1 | Internet y seguridad perimetral | VLAN, reglas, VPN, registros y actualizaciones | Controla el tráfico. |
 | Punto de acceso Wi-Fi | 2 | Wi-Fi corporativo e invitados | Wi-Fi 6, VLAN/SSID y WPA2/WPA3 | Cobertura inalámbrica separada. |
 | Impresora multifunción | 1 | Impresión y escaneo | Ethernet e impresión en red | Recurso compartido. |
 | Discos externos | 2 | Copia adicional | Capacidad adecuada y cifrado | Copia independiente del NAS. |
-| SAI | 2 | Protección eléctrica | Capacidad adecuada y apagado controlado | Respuesta ante cortes eléctricos. |
+| SAI | 2 | Protección eléctrica | Potencia en VA/W superior a la carga conectada; autonomía suficiente para apagado controlado y comunicación USB/SNMP si es compatible | Protección ante cortes; el dimensionamiento definitivo requiere medir el consumo de hosts, NAS y red. |
 | Cableado y accesorios | Según instalación | Conexión de dispositivos | Cat 6, panel de parcheo y tomas | Instalación ordenada. |
 
 ## 5.2. Software y servicios
