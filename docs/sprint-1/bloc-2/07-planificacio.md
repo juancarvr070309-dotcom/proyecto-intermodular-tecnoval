@@ -60,7 +60,8 @@ El seguimiento consiste en mover cada tarjeta a la lista que corresponda conform
 
 **Enlace accesible al tablero:** [Abrir el tablero de Trello](https://trello.com/b/PPo2BEAZ/proyecto-intermodular-tecnoval-assistencia-it-juan-carlos-isaac-beltran).
 
-**Captura de pantalla:** se debe insertar aquí una captura real del tablero donde se vean las listas y las tarjetas. El enlace permite consultar el tablero, pero no sustituye la captura solicitada en la práctica.
+<img width="923" height="661" alt="image" src="https://github.com/user-attachments/assets/5307ec0c-1ea4-4a2a-8b24-421c79e08d79" />
+
 
 ## 7.6. Criterio de finalización
 
