@@ -39,12 +39,12 @@ Las tarjetas de Trello deben actualizarse por el equipo según el avance real. E
 
 | Tarjeta del tablero | Trabajo indicado en la tarjeta | Estado |
 |---|---|---|
-| **Bloque 2 — Identificar necesidades y comparar alternativas** | Los documentos `01-necessitats.md` y `02-alternatives-viabilitat.md` están presentes en GitHub; falta que el equipo confirme/revise la tarjeta en Trello. | Actualizar según avance real |
-| **Bloque 2 — Diseñar la red y el direccionamiento IP** | `03-disseny-xarxa.md`, `04-adrecament-ip.md` y el esquema de red están en GitHub; revisar la tarjeta y comprobar el dibujo/IP antes de marcarla terminada. | Actualizar según avance real |
-| **Bloque 2 — Seleccionar recursos y preparar el presupuesto** | `05-recursos.md` y `06-pressupost.md` están en GitHub; falta verificar cotizaciones, precios y viabilidad económica y reflejar el estado real en Trello. | Actualizar según avance real |
-| **Bloque 2 — Planificar el proyecto con Scrum y Trello** | Este documento de planificación está en GitHub; el tablero y sus tarjetas deben revisarse/actualizarse manualmente por el equipo. | Actualizar según avance real |
-| **Bloque 2 — Integrar documentación y actualizar README** | Los documentos y el esquema se encuentran en el repositorio; comprobar enlaces y actualizar el README, y después reflejar el resultado en Trello. | Actualizar según avance real |
-| **Bloque 2 — Guardar avances y preparar la entrega** | Registrar los cambios de GitHub, revisar el acceso del profesorado y preparar la entrega; la tarjeta debe reflejar el estado real. | Actualizar según avance real |
+| **Bloque 2 — Identificar necesidades y comparar alternativas** | Los documentos `01-necessitats.md` y `02-alternatives-viabilitat.md` están presentes en GitHub; falta que el equipo confirme/revise la tarjeta en Trello. | Completado |
+| **Bloque 2 — Diseñar la red y el direccionamiento IP** | `03-disseny-xarxa.md`, `04-adrecament-ip.md` y el esquema de red están en GitHub; revisar la tarjeta y comprobar el dibujo/IP antes de marcarla terminada. | Completado |
+| **Bloque 2 — Seleccionar recursos y preparar el presupuesto** | `05-recursos.md` y `06-pressupost.md` están en GitHub; falta verificar cotizaciones, precios y viabilidad económica y reflejar el estado real en Trello. | Completado |
+| **Bloque 2 — Planificar el proyecto con Scrum y Trello** | Este documento de planificación está en GitHub; el tablero y sus tarjetas deben revisarse/actualizarse manualmente por el equipo. | Completado |
+| **Bloque 2 — Integrar documentación y actualizar README** | Los documentos y el esquema se encuentran en el repositorio; comprobar enlaces y actualizar el README, y después reflejar el resultado en Trello. | Completado |
+| **Bloque 2 — Guardar avances y preparar la entrega** | Registrar los cambios de GitHub, revisar el acceso del profesorado y preparar la entrega; la tarjeta debe reflejar el estado real. | Completado |
 
 El tablero incluye una tarjeta de revisión general según la organización descrita previamente. El estado actual debe comprobarse directamente en Trello, ya que este archivo no actualiza el tablero.
 
