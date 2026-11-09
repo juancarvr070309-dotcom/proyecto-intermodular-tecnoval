@@ -11,7 +11,7 @@ Se comparan alternativas teniendo en cuenta coste aproximado, facilidad de admin
 | Servidores | Tres equipos físicos independientes | Dos hosts físicos con virtualización y un NAS para copias | Dos hosts virtualizables y NAS; servicios separados en máquinas virtuales. |
 | Red | Switches no gestionables, económicos | Switches gestionables con VLAN y monitorización | Switches gestionables para separar usuarios, servidores, invitados y DMZ. |
 | Seguridad | Router doméstico con funciones básicas | Firewall empresarial o dedicado | Firewall con VLAN, reglas, VPN y registro de eventos. |
-| Web | Alojamiento externo | Servidor propio en DMZ | Alojamiento externo inicialmente por menor mantenimiento; DMZ preparada para el futuro. |
+| Web | Servidor propio en DMZ | Alojamiento externo |Seleccionamos el DMZ por motivos de presupuesto y se ve para futuro mejorar a uno externo. |
 | Ofimática | Licencias comerciales por usuario | Suite libre como LibreOffice | Suite libre para reducir gastos, comprobando compatibilidad. |
 
 ## 2.3. Ventajas, limitaciones y requisitos
