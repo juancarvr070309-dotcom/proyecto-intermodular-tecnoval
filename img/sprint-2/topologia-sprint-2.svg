@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+<defs><style>
+.t{font: bold 24px Arial;fill:#172033}.s{font:18px Arial;fill:#172033}.small{font:15px Arial;fill:#334155}
+.box{fill:#f8fafc;stroke:#334155;stroke-width:2;rx:14}.router{fill:#e0f2fe;stroke:#0369a1;stroke-width:3;rx:16}.lan{fill:#ecfdf5;stroke:#15803d;stroke-width:3;rx:18}.dmz{fill:#fff7ed;stroke:#c2410c;stroke-width:3;rx:18}.line{stroke:#475569;stroke-width:3;fill:none}
+</style></defs>
+<rect width="1200" height="720" fill="#ffffff"/>
+<text x="600" y="45" text-anchor="middle" class="t">TecnoVal Asistencia IT — Laboratori Sprint 2</text>
+<rect x="475" y="80" width="250" height="80" class="box"/>
+<text x="600" y="112" text-anchor="middle" class="t">Internet</text><text x="600" y="140" text-anchor="middle" class="small">VirtualBox NAT</text>
+<rect x="420" y="220" width="360" height="170" class="router"/>
+<text x="600" y="255" text-anchor="middle" class="t">TV-COMMS</text>
+<text x="600" y="290" text-anchor="middle" class="s">Debian 13 — encaminament + DHCP LAN</text>
+<text x="600" y="325" text-anchor="middle" class="small">Exterior: NAT (IP automàtica)</text>
+<text x="600" y="352" text-anchor="middle" class="small">LAN: 192.168.10.1/24</text>
+<text x="600" y="378" text-anchor="middle" class="small">DMZ: 192.168.30.1/24</text>
+<path d="M600 160 V220" class="line"/><text x="620" y="195" class="small">Adaptador 1</text>
+<rect x="55" y="470" width="500" height="205" class="lan"/>
+<text x="305" y="510" text-anchor="middle" class="t">LAN — TecnoVal-LAN</text>
+<text x="305" y="540" text-anchor="middle" class="s">192.168.10.0/24 · Xarxa interna VirtualBox</text>
+<rect x="85" y="570" width="190" height="75" class="box"/>
+<text x="180" y="600" text-anchor="middle" class="s">TV-CLIENT-WIN</text><text x="180" y="625" text-anchor="middle" class="small">Windows 11 · DHCP</text>
+<rect x="335" y="570" width="190" height="75" class="box"/>
+<text x="430" y="600" text-anchor="middle" class="s">TV-CLIENT-LINUX</text><text x="430" y="625" text-anchor="middle" class="small">Debian 13 · DHCP</text>
+<rect x="200" y="425" width="210" height="65" class="box"/>
+<text x="305" y="453" text-anchor="middle" class="s">TV-SRVINT</text><text x="305" y="477" text-anchor="middle" class="small">Windows Server · .10</text>
+<path d="M510 390 L510 425" class="line"/><path d="M510 425 L305 425" class="line"/><path d="M305 425 V470" class="line"/>
+<path d="M420 330 H305 V425" class="line"/>
+<rect x="645" y="470" width="500" height="205" class="dmz"/>
+<text x="895" y="510" text-anchor="middle" class="t">DMZ — TecnoVal-DMZ</text>
+<text x="895" y="540" text-anchor="middle" class="s">192.168.30.0/24 · Xarxa interna VirtualBox</text>
+<rect x="790" y="570" width="210" height="75" class="box"/>
+<text x="895" y="600" text-anchor="middle" class="s">TV-DMZ</text><text x="895" y="625" text-anchor="middle" class="small">Debian 13 · 192.168.30.10</text>
+<path d="M690 390 V430 H895 V470" class="line"/>
+<text x="600" y="700" text-anchor="middle" class="small">Els clients i servidors interns no tenen adaptador NAT propi. L'eixida exterior passa per TV-COMMS.</text>
+</svg>
