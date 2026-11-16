@@ -18,7 +18,7 @@ Els valors de RAM, CPU i disc són una proposta inicial. Cal anotar els valors r
 | `TV-CLIENT-LINUX` | Client Linux de proves | Debian 13 amb XFCE | 2 GB | 2 | 25 GB | Mateix amfitrió |
 | `TV-DMZ` | Servidor Linux situat en la DMZ | Ubuntu Server 24.04 LTS | 1–2 GB | 1 | 20 GB | Mateix amfitrió |
 
-**RAM total orientativa:** 12–13 GB (segons la RAM assignada a TV-DMZ). Si l'ordinador no disposa de prou RAM, no s'han d'arrancar les cinc màquines alhora: es poden iniciar per fases, mantenint actius el servidor de comunicacions i els equips necessaris per a cada prova. No s'ha d'assignar a les VM tota la RAM física de l'amfitrió.
+**RAM total orientativa:** 13–14 GB (segons la RAM assignada a TV-DMZ). Si l'ordinador no disposa de prou RAM, no s'han d'arrancar les cinc màquines alhora: es poden iniciar per fases, mantenint actius el servidor de comunicacions i els equips necessaris per a cada prova. No s'ha d'assignar a les VM tota la RAM física de l'amfitrió.
 
 ## 2.3. Decisions d'instal·lació
 
