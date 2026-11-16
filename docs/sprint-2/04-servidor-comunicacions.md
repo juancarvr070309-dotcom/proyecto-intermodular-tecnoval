@@ -2,7 +2,7 @@
 
 ## 4.1. Funció
 
-`TV-COMMS` és una màquina virtual amb Debian 13 que actua com a encaminador entre la LAN (`192.168.10.0/24`) i la DMZ (`192.168.30.0/24`). També proporciona l'eixida a Internet mitjançant l'adaptador NAT de VirtualBox i allotjarà el servei DHCP de la LAN.
+`TV-COMMS` és una màquina virtual amb Ubuntu Server 24.04 LTS que actua com a encaminador entre la LAN (`192.168.10.0/24`) i la DMZ (`192.168.30.0/24`). També proporciona l'eixida a Internet mitjançant l'adaptador NAT de VirtualBox i allotjarà el servei DHCP de la LAN.
 
 ## 4.2. Interfícies
 
@@ -24,7 +24,7 @@ Anotar quin nom correspon a NAT, LAN i DMZ abans de modificar cap fitxer de xarx
 
 ## 4.3. Configurar les IP internes
 
-Configurar les interfícies LAN i DMZ amb IP fixes segons el mètode de xarxa que utilitze la instal·lació de Debian (NetworkManager o systemd-networkd). No s'han de configurar dos gestors alhora per a les mateixes interfícies.
+Configurar les interfícies LAN i DMZ amb IP fixes amb Netplan, que és l'eina habitual d'Ubuntu Server. Abans d'editar, identificar les interfícies i revisar la configuració existent de `/etc/netplan/`. No s'han de configurar dos gestors alhora per a les mateixes interfícies.
 
 Valors:
 - Interfície LAN: `192.168.10.1/24`.
