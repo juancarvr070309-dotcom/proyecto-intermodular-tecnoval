@@ -77,6 +77,7 @@ El Sprint 2 es podrà donar per finalitzat quan:
 ## 7.8. Fonts tècniques
 
 - [VirtualBox User Manual — Networking](https://www.virtualbox.org/manual/ch06.html).
-- [Debian Administrator's Handbook](https://debian-handbook.info/).
+- [Ubuntu Server documentation](https://ubuntu.com/server/docs).
+- [Debian Administrator's Handbook](https://debian-handbook.info/) (client Linux Debian).
 - [dnsmasq — documentació del projecte](https://thekelleys.org.uk/dnsmasq/doc.html).
 - [Linux kernel — IP sysctl](https://docs.kernel.org/networking/ip-sysctl.html).
