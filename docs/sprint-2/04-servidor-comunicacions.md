@@ -1,69 +1,69 @@
-# 4. Servidor de comunicacions i encaminament
+# 4. Servidor de comunicaciones y enrutamiento
 
-## 4.1. Funció
+## 4.1. Función
 
-`TV-COMMS` és una màquina virtual amb Ubuntu Server 26.04.1 LTS que actua com a encaminador entre la LAN (`192.168.10.0/24`) i la DMZ (`192.168.30.0/24`). També proporciona l'eixida a Internet mitjançant l'adaptador NAT de VirtualBox i allotjarà el servei DHCP de la LAN.
+`TV-COMMS` es una máquina virtual con Ubuntu Server 26.04.1 LTS que actúa como enrutador entre la LAN (`192.168.10.0/24`) y la DMZ (`192.168.30.0/24`). También proporciona salida a Internet mediante el adaptador NAT de VirtualBox y alojará el servicio DHCP de la LAN.
 
-## 4.2. Interfícies
+## 4.2. Interfaces
 
-La màquina ha de tindre tres adaptadors. Els noms Linux poden variar; no s'ha de copiar un nom d'interfície sense comprovar-lo.
+La máquina debe tener tres adaptadores. Los nombres de las interfaces Linux pueden variar; no se debe copiar un nombre de interfaz sin comprobarlo.
 
-| Funció | Xarxa VirtualBox | IP prevista |
+| Función | Red VirtualBox | IP prevista |
 |---|---|---|
-| Exterior | NAT | Automàtica |
+| Exterior | NAT | Automática |
 | LAN | TecnoVal-LAN | 192.168.10.1/24 |
 | DMZ | TecnoVal-DMZ | 192.168.30.1/24 |
 
-Identificar les interfícies amb:
+Identificar las interfaces con:
 ```bash
 ip -br link
 ip -br address
 ```
 
-Anotar quin nom correspon a NAT, LAN i DMZ abans de modificar cap fitxer de xarxa.
+Anotar qué nombre corresponde a NAT, LAN y DMZ antes de modificar ningún archivo de red.
 
-## 4.3. Configurar les IP internes
+## 4.3. Configurar las IP internas
 
-Configurar les interfícies LAN i DMZ amb IP fixes amb Netplan, que és l'eina habitual d'Ubuntu Server. Abans d'editar, identificar les interfícies i revisar la configuració existent de `/etc/netplan/`. No s'han de configurar dos gestors alhora per a les mateixes interfícies.
+Configurar las interfaces LAN y DMZ con IP fijas mediante Netplan, que es la herramienta habitual de Ubuntu Server. Antes de editar, identificar las interfaces y revisar la configuración existente de `/etc/netplan/`. No se deben configurar dos gestores a la vez para las mismas interfaces.
 
-Valors:
-- Interfície LAN: `192.168.10.1/24`.
-- Interfície DMZ: `192.168.30.1/24`.
-- Interfície exterior: DHCP de VirtualBox NAT.
+Valores:
+- Interfaz LAN: `192.168.10.1/24`.
+- Interfaz DMZ: `192.168.30.1/24`.
+- Interfaz exterior: DHCP de VirtualBox NAT.
 
-Després, comprovar:
+Después, comprobar:
 ```bash
 ip -br address
 ip route
 ```
 
-La ruta per defecte ha d'eixir per la interfície exterior. Les xarxes connectades `192.168.10.0/24` i `192.168.30.0/24` han d'aparéixer com a rutes directament connectades.
+La ruta predeterminada debe salir por la interfaz exterior. Las redes conectadas `192.168.10.0/24` y `192.168.30.0/24` deben aparecer como rutas directamente conectadas.
 
-## 4.4. Activar el reenviament IPv4 de manera persistent
+## 4.4. Activar el reenvío IPv4 de forma persistente
 
-Crear el fitxer `/etc/sysctl.d/99-tecnoval-router.conf` amb aquest contingut:
+Crear el archivo `/etc/sysctl.d/99-tecnoval-router.conf` con este contenido:
 
 ```ini
 net.ipv4.ip_forward=1
 ```
 
-Aplicar i comprovar:
+Aplicar y comprobar:
 ```bash
 sudo sysctl --system
 sysctl net.ipv4.ip_forward
 ```
 
-El resultat esperat és `net.ipv4.ip_forward = 1`. Després de reiniciar, tornar a executar l'ordre per comprovar que continua activat.
+El resultado esperado es `net.ipv4.ip_forward = 1`. Después de reiniciar, volver a ejecutar el comando para comprobar que sigue activado.
 
-## 4.5. Eixida a Internet mitjançant NAT
+## 4.5. Salida a Internet mediante NAT
 
-Perquè la LAN i la DMZ puguen eixir a Internet a través de TV-COMMS, cal configurar encaminament i traducció d'adreces (masquerade) des de les xarxes internes cap a la interfície exterior. La configuració concreta de les regles dependrà del sistema de tallafoc autoritzat pel professorat. Documentar les regles aplicades i no desactivar el tallafoc com a solució general.
+Para que la LAN y la DMZ puedan salir a Internet a través de TV-COMMS, hay que configurar el enrutamiento y la traducción de direcciones (masquerade) desde las redes internas hacia la interfaz exterior. La configuración concreta de las reglas dependerá del sistema de cortafuegos autorizado por el profesorado. Documentar las reglas aplicadas y no desactivar el cortafuegos como solución general.
 
-Abans de configurar-les, identificar la interfície exterior real amb `ip route`. No inventar-ne el nom.
+Antes de configurarlas, identificar la interfaz exterior real con `ip route`. No inventar su nombre.
 
-## 4.6. Proves
+## 4.6. Pruebas
 
-Des de TV-COMMS:
+Desde TV-COMMS:
 ```bash
 ip -br address
 ip route
@@ -72,19 +72,19 @@ ping -c 4 192.168.10.10
 ping -c 4 192.168.30.10
 ```
 
-Les dues últimes proves es faran quan els servidors corresponents estiguen configurats i responguen a ICMP. També comprovar la passarel·la exterior assignada per VirtualBox:
+Las dos últimas pruebas se realizarán cuando los servidores correspondientes estén configurados y respondan a ICMP. También hay que comprobar la puerta de enlace exterior asignada por VirtualBox:
 ```bash
 ip route show default
 ```
 
-Després de reiniciar TV-COMMS, repetir les comprovacions d'interfícies, rutes i reenviament.
+Después de reiniciar TV-COMMS, repetir las comprobaciones de interfaces, rutas y reenvío.
 
-## 4.7. Evidències necessàries
+## 4.7. Evidencias necesarias
 
-Guardar captures reals en `img/sprint-2/`:
+Guardar capturas reales en `img/sprint-2/`:
 - `07-comms-interficies.png`: `ip -br address`.
 - `08-comms-rutes.png`: `ip route`.
 - `09-comms-forwarding.png`: valor 1 de `net.ipv4.ip_forward`.
-- `10-comms-reinici.png`: comprovació després de reiniciar.
+- `10-comms-reinici.png`: comprobación después de reiniciar.
 
-Afegir ací les captures quan es realitzen. No s'afirma que l'encaminament estiga operatiu fins que les proves donen el resultat esperat.
+Añadir aquí las capturas cuando se realicen. No se afirmará que el enrutamiento está operativo hasta que las pruebas den el resultado esperado.
