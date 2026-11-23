@@ -1,37 +1,37 @@
-# 2. Creació de les màquines virtuals i instal·lació
+# 2. Creación de las máquinas virtuales e instalación
 
-## 2.1. Criteri
+## 2.1. Criterio
 
-El laboratori segueix l'estructura mínima del PDF: cinc màquines virtuals en total, de les quals només dues són clients de prova. No es crearà una màquina per cadascun dels 12 treballadors de TecnoVal.
+El laboratorio sigue la estructura mínima del PDF: cinco máquinas virtuales en total, de las cuales solo dos son clientes de prueba. No se creará una máquina para cada uno de los 12 trabajadores de TecnoVal.
 
-S'utilitzarà Ubuntu Server 26.04.1 LTS en els dos servidors Linux (`TV-COMMS` i `TV-DMZ`). Per al client Linux es proposa Debian 13 amb l'entorn gràfic XFCE: és lleuger, funciona bé amb 2 GB de RAM i permet practicar les ordres Linux sense carregar massa l'ordinador amfitrió. La versió de Windows Server i les ISO s'han de confirmar amb el professorat abans de la instal·lació.
+Se utilizará Ubuntu Server 26.04.1 LTS en los dos servidores Linux (`TV-COMMS` y `TV-DMZ`). Para el cliente Linux se propone Debian 13 con el entorno gráfico XFCE: es ligero, funciona bien con 2 GB de RAM y permite practicar los comandos de Linux sin cargar demasiado el ordenador anfitrión. La versión de Windows Server y las imágenes ISO deben confirmarse con el profesorado antes de la instalación.
 
-## 2.2. Inventari de màquines
+## 2.2. Inventario de máquinas
 
-Els valors de RAM, CPU i disc són una proposta inicial. Cal anotar els valors reals de VirtualBox després de crear cada màquina.
+Los valores de RAM, CPU y disco son una propuesta inicial. Hay que anotar los valores reales de VirtualBox después de crear cada máquina.
 
-| Nom de la VM | Funció | Sistema proposat | RAM | CPU | Disc | Amfitrió |
+| Nombre de la VM | Función | Sistema propuesto | RAM | CPU | Disco | Anfitrión |
 |---|---|---|---:|---:|---:|---|
-| `TV-COMMS` | Encaminament LAN/DMZ i DHCP | Ubuntu Server 26.04.1 LTS | 2 GB | 2 | 20 GB | Ordinador de laboratori acordat |
-| `TV-SRVINT` | Servidor intern, preparat per al Sprint 3 | Windows Server (versió indicada pel professorat) | 4 GB | 2 | 60 GB | Mateix amfitrió |
-| `TV-CLIENT-WIN` | Client Windows de proves | Windows 11 Pro | 4 GB | 2 | 64 GB | Mateix amfitrió |
-| `TV-CLIENT-LINUX` | Client Linux de proves | Debian 13 amb XFCE | 2 GB | 2 | 25 GB | Mateix amfitrió |
-| `TV-DMZ` | Servidor Linux situat en la DMZ | Ubuntu Server 26.04.1 LTS | 1–2 GB | 1 | 20 GB | Mateix amfitrió |
+| `TV-COMMS` | Enrutamiento LAN/DMZ y DHCP | Ubuntu Server 26.04.1 LTS | 2 GB | 2 | 20 GB | Ordenador de laboratorio acordado |
+| `TV-SRVINT` | Servidor interno, preparado para el Sprint 3 | Windows Server (versión indicada por el profesorado) | 4 GB | 2 | 60 GB | Mismo anfitrión |
+| `TV-CLIENT-WIN` | Cliente Windows de pruebas | Windows 11 Pro | 4 GB | 2 | 64 GB | Mismo anfitrión |
+| `TV-CLIENT-LINUX` | Cliente Linux de pruebas | Debian 13 con XFCE | 2 GB | 2 | 25 GB | Mismo anfitrión |
+| `TV-DMZ` | Servidor Linux situado en la DMZ | Ubuntu Server 26.04.1 LTS | 1–2 GB | 1 | 20 GB | Mismo anfitrión |
 
-**RAM total orientativa:** 13–14 GB (segons la RAM assignada a TV-DMZ). Si l'ordinador no disposa de prou RAM, no s'han d'arrancar les cinc màquines alhora: es poden iniciar per fases, mantenint actius el servidor de comunicacions i els equips necessaris per a cada prova. No s'ha d'assignar a les VM tota la RAM física de l'amfitrió.
+**RAM total orientativa:** 13–14 GB (según la RAM asignada a TV-DMZ). Si el ordenador no dispone de suficiente RAM, no se deben iniciar las cinco máquinas al mismo tiempo: se pueden iniciar por fases, manteniendo activos el servidor de comunicaciones y los equipos necesarios para cada prueba. No se debe asignar a las VM toda la RAM física del anfitrión.
 
-## 2.3. Decisions d'instal·lació
+## 2.3. Decisiones de instalación
 
-- Utilitzar discs virtuals dinàmics per no ocupar immediatament tota la capacitat màxima.
-- Assignar noms d'equip únics, tal com apareixen en la taula.
-- Instal·lar només els components necessaris per a les proves.
-- No instal·lar Active Directory ni unir els clients a un domini en aquest sprint; correspon al Sprint 3.
-- No instal·lar serveis públics en la DMZ; només deixar el servidor instal·lat i connectat a la xarxa DMZ.
-- Fer una instantània després de completar la instal·lació bàsica.
+- Utilizar discos virtuales dinámicos para no ocupar inmediatamente toda la capacidad máxima.
+- Asignar nombres de equipo únicos, tal como aparecen en la tabla.
+- Instalar solo los componentes necesarios para las pruebas.
+- No instalar Active Directory ni unir los clientes a un dominio en este sprint; corresponde al Sprint 3.
+- No instalar servicios públicos en la DMZ; solo dejar el servidor instalado y conectado a la red DMZ.
+- Crear una instantánea después de completar la instalación básica.
 
-## 2.4. Comprovacions d'instal·lació
+## 2.4. Comprobaciones de instalación
 
-En cada màquina, comprovar que arranca, permet iniciar sessió i mostra el nom correcte.
+En cada máquina, comprobar que arranca, permite iniciar sesión y muestra el nombre correcto.
 
 **Windows:**
 ```powershell
@@ -39,32 +39,32 @@ hostname
 whoami
 ```
 
-**Linux (Ubuntu Server i Debian):**
+**Linux (Ubuntu Server y Debian):**
 ```bash
 hostname
 whoami
 hostnamectl
 ```
 
-## 2.5. Evidències que s'han d'afegir
+## 2.5. Evidencias que se deben añadir
 
-Guardar les captures reals en `img/sprint-2/` amb noms clars:
+Guardar las capturas reales en `img/sprint-2/` con nombres claros:
 
-| Captura | Què ha de mostrar |
+| Captura | Qué debe mostrar |
 |---|---|
-| `01-tv-comms-login.png` | Sessió iniciada i nom TV-COMMS |
-| `02-tv-srvint-login.png` | Sessió iniciada i nom TV-SRVINT |
-| `03-tv-client-win-login.png` | Sessió iniciada i nom TV-CLIENT-WIN |
-| `04-tv-client-linux-login.png` | Sessió iniciada i nom TV-CLIENT-LINUX |
-| `05-tv-dmz-login.png` | Sessió iniciada i nom TV-DMZ |
-| `06-virtualbox-resum-vm.png` | Configuració de RAM, CPU i disc de les màquines |
+| `01-tv-comms-login.png` | Sesión iniciada y nombre TV-COMMS |
+| `02-tv-srvint-login.png` | Sesión iniciada y nombre TV-SRVINT |
+| `03-tv-client-win-login.png` | Sesión iniciada y nombre TV-CLIENT-WIN |
+| `04-tv-client-linux-login.png` | Sesión iniciada y nombre TV-CLIENT-LINUX |
+| `05-tv-dmz-login.png` | Sesión iniciada y nombre TV-DMZ |
+| `06-virtualbox-resum-vm.png` | Configuración de RAM, CPU y disco de las máquinas |
 
-> **Pendent de completar:** inserir les captures reals quan les cinc màquines estiguen instal·lades. No s'han afegit captures fictícies.
+> **Pendiente de completar:** insertar las capturas reales cuando las cinco máquinas estén instaladas. No se han añadido capturas ficticias.
 
-## 2.6. Clonació
+## 2.6. Clonación
 
-Si es clona alguna màquina, cal generar una nova adreça MAC per a cada adaptador i canviar el nom de l'equip abans de connectar-la a la xarxa. No s'han de deixar dues màquines amb el mateix nom o MAC.
+Si se clona alguna máquina, hay que generar una nueva dirección MAC para cada adaptador y cambiar el nombre del equipo antes de conectarla a la red. No se deben dejar dos máquinas con el mismo nombre o MAC.
 
-## 2.7. Resultat
+## 2.7. Resultado
 
-Aquest apartat quedarà complet quan les cinc màquines arranquen correctament, permeten iniciar sessió i les captures mostren els noms i recursos reals. El servidor intern Windows quedarà preparat per al Sprint 3, sense Active Directory ni unió al domini.
+Este apartado quedará completo cuando las cinco máquinas arranquen correctamente, permitan iniciar sesión y las capturas muestren los nombres y recursos reales. El servidor interno Windows quedará preparado para el Sprint 3, sin Active Directory ni unión al dominio.
