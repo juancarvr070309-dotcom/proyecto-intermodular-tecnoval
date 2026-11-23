@@ -1,83 +1,83 @@
-# 7. Seguiment del sprint i registre d'incidències
+# 7. Seguimiento del sprint y registro de incidencias
 
-## 7.1. Organització del seguiment
+## 7.1. Organización del seguimiento
 
-El seguiment es farà al final de cada sessió de treball. Juan Carlos i Isaac revisaran les targetes de Trello i actualitzaran aquest document amb:
+El seguimiento se realizará al final de cada sesión de trabajo. Juan Carlos e Isaac revisarán las tarjetas de Trello y actualizarán este documento con:
 
-- Tasques previstes i tasques realitzades.
-- Temps utilitzat.
-- Problemes detectats i solucions aplicades.
-- Tasques que queden pendents.
-- Diferències respecte del pla inicial.
+- Tareas previstas y tareas realizadas.
+- Tiempo utilizado.
+- Problemas detectados y soluciones aplicadas.
+- Tareas que quedan pendientes.
+- Diferencias respecto al plan inicial.
 
-**Tauler Trello:** [Proyecto Intermodular — TecnoVal Assistència IT](https://trello.com/b/PPo2BEAZ/proyecto-intermodular-tecnoval-assistencia-it-juan-carlos-isaac-beltran).
+**Tablero de Trello:** [Proyecto Intermodular — TecnoVal Assistència IT](https://trello.com/b/PPo2BEAZ/proyecto-intermodular-tecnoval-assistencia-it-juan-carlos-isaac-beltran).
 
-## 7.2. Registre de sessions
+## 7.2. Registro de sesiones
 
-| Data | Tasques previstes | Tasques realitzades | Temps utilitzat | Problemes o desviacions | Treball pendent |
+| Fecha | Tareas previstas | Tareas realizadas | Tiempo utilizado | Problemas o desviaciones | Trabajo pendiente |
 |---|---|---|---|---|---|
-| Pendent d'emplenar | Preparar entorn i revisar recursos | — | — | — | — |
-| Pendent d'emplenar | Crear màquines i instal·lar sistemes | — | — | — | — |
-| Pendent d'emplenar | Configurar LAN, DMZ i IP | — | — | — | — |
-| Pendent d'emplenar | Configurar encaminament i DHCP | — | — | — | — |
-| Pendent d'emplenar | Proves, correccions i documentació | — | — | — | — |
+| Pendiente de completar | Preparar el entorno y revisar los recursos | — | — | — | — |
+| Pendiente de completar | Crear máquinas e instalar sistemas | — | — | — | — |
+| Pendiente de completar | Configurar LAN, DMZ e IP | — | — | — | — |
+| Pendiente de completar | Configurar enrutamiento y DHCP | — | — | — | — |
+| Pendiente de completar | Pruebas, correcciones y documentación | — | — | — | — |
 
-No s'han afegit dates ni temps ficticis. Emplenar les files després de cada sessió.
+No se han añadido fechas ni tiempos ficticios. Completar las filas después de cada sesión.
 
-## 7.3. Registre d'incidències
+## 7.3. Registro de incidencias
 
-| Data | Equip o tasca | Problema o desviació | Causa identificada | Intervenció i responsable | Comprovació final | Comunicació al professorat |
+| Fecha | Equipo o tarea | Problema o desviación | Causa identificada | Intervención y responsable | Comprobación final | Comunicación al profesorado |
 |---|---|---|---|---|---|---|
-| — | — | Cap incidència real registrada encara | — | — | — | No aplica |
+| — | — | Todavía no se ha registrado ninguna incidencia real | — | — | — | No aplica |
 
-Quan aparega una incidència real, afegir una fila amb la informació completa. Si no hi ha incidències, mantindre-ho indicat i justificar-ho amb les proves realitzades. No inventar problemes ni solucions.
+Cuando aparezca una incidencia real, añadir una fila con toda la información. Si no hay incidencias, mantenerlo indicado y justificarlo con las pruebas realizadas. No inventar problemas ni soluciones.
 
-## 7.4. Comunicació de desviacions
+## 7.4. Comunicación de desviaciones
 
-Si una incidència afecta el termini, els recursos o l'abast de la pràctica:
-1. Informar el professorat tan prompte com siga possible.
-2. Explicar el problema i la tasca afectada.
-3. Proposar una alternativa i indicar si canvia el termini.
-4. Registrar la resposta o l'acord en la taula d'incidències.
-5. Actualitzar el pla, la taula IP o el diagrama si el canvi ho requereix.
+Si una incidencia afecta al plazo, los recursos o el alcance de la práctica:
+1. Informar al profesorado lo antes posible.
+2. Explicar el problema y la tarea afectada.
+3. Proponer una alternativa e indicar si cambia el plazo.
+4. Registrar la respuesta o el acuerdo en la tabla de incidencias.
+5. Actualizar el plan, la tabla IP o el diagrama si el cambio lo requiere.
 
-## 7.5. Revisió final
+## 7.5. Revisión final
 
-Completar aquest apartat quan s'hagen fet les pràctiques:
+Completar este apartado cuando se hayan realizado las prácticas:
 
-- **Què funciona:** pendent de les proves reals.
-- **Què queda pendent:** pendent de revisar les tasques i les proves.
-- **Canvis respecte del Sprint 1:** el laboratori utilitza dues xarxes de prova, LAN `192.168.10.0/24` i DMZ `192.168.30.0/24`, amb TV-COMMS com a encaminador. Les altres VLAN del disseny empresarial no es despleguen en aquest laboratori bàsic.
-- **Aportació de Juan Carlos:** participar en instal·lació, proves, captures, documentació i seguiment; concretar les tasques realitzades en acabar.
-- **Aportació d'Isaac:** participar en instal·lació, configuració de xarxa i servidors, proves i documentació; concretar les tasques realitzades en acabar.
+- **Qué funciona:** pendiente de las pruebas reales.
+- **Qué queda pendiente:** pendiente de revisar las tareas y las pruebas.
+- **Cambios respecto al Sprint 1:** el laboratorio utiliza dos redes de prueba, LAN `192.168.10.0/24` y DMZ `192.168.30.0/24`, con TV-COMMS como enrutador. Las demás VLAN del diseño empresarial no se despliegan en este laboratorio básico.
+- **Aportación de Juan Carlos:** participar en la instalación, las pruebas, las capturas, la documentación y el seguimiento; concretar las tareas realizadas al terminar.
+- **Aportación de Isaac:** participar en la instalación, la configuración de red y servidores, las pruebas y la documentación; concretar las tareas realizadas al terminar.
 
-Les aportacions s'han de descriure segons el treball real i els commits de cada membre, no segons una distribució teòrica.
+Las aportaciones deben describirse según el trabajo real y los commits de cada integrante, no según un reparto teórico.
 
 ## 7.6. Captura final de Trello
 
-Afegir una captura real del tauler quan les targetes estiguen actualitzades. La captura ha de mostrar les llistes i l'estat de les tasques del Sprint 2.
+Añadir una captura real del tablero cuando las tarjetas estén actualizadas. La captura debe mostrar las listas y el estado de las tareas del Sprint 2.
 
-**Enllaç:** [Obrir el tauler de Trello](https://trello.com/b/PPo2BEAZ/proyecto-intermodular-tecnoval-assistencia-it-juan-carlos-isaac-beltran).
+**Enlace:** [Abrir el tablero de Trello](https://trello.com/b/PPo2BEAZ/proyecto-intermodular-tecnoval-assistencia-it-juan-carlos-isaac-beltran).
 
-> **Pendent:** inserir la captura final de Trello en `img/sprint-2/`. No s'ha inventat cap captura.
+> **Pendiente:** insertar la captura final de Trello en `img/sprint-2/`. No se ha inventado ninguna captura.
 
-## 7.7. Criteris de tancament
+## 7.7. Criterios de cierre
 
-El Sprint 2 es podrà donar per finalitzat quan:
-- Les cinc màquines requerides estiguen instal·lades i arranquen.
-- LAN i DMZ siguen xarxes virtuals diferents i no se solapen.
-- Les IP fixes, noms i diagrama coincidisquen amb la configuració real.
-- TV-COMMS mantinga l'encaminament després de reiniciar.
-- Els dos clients reben DHCP correctament.
-- Les proves i les incidències estiguen documentades.
-- Les captures reals estiguen guardades en `img/sprint-2/`.
-- Els set documents i el README estiguen revisats.
-- Trello reflectisca l'avanç real i el professorat tinga accés als recursos.
+El Sprint 2 se podrá dar por finalizado cuando:
+- Las cinco máquinas requeridas estén instaladas y arranquen.
+- LAN y DMZ sean redes virtuales diferentes y no se solapen.
+- Las IP fijas, los nombres y el diagrama coincidan con la configuración real.
+- TV-COMMS mantenga el enrutamiento después de reiniciar.
+- Los dos clientes reciban DHCP correctamente.
+- Las pruebas y las incidencias estén documentadas.
+- Las capturas reales estén guardadas en `img/sprint-2/`.
+- Los siete documentos y el README estén revisados.
+- Trello refleje el avance real y el profesorado tenga acceso a los recursos.
 
-## 7.8. Fonts tècniques
+## 7.8. Fuentes técnicas
 
 - [VirtualBox User Manual — Networking](https://www.virtualbox.org/manual/ch06.html).
 - [Ubuntu Server documentation](https://ubuntu.com/server/docs).
-- [Debian Administrator's Handbook](https://debian-handbook.info/) (client Linux Debian).
-- [dnsmasq — documentació del projecte](https://thekelleys.org.uk/dnsmasq/doc.html).
+- [Debian Administrator's Handbook](https://debian-handbook.info/) (cliente Linux Debian).
+- [dnsmasq — documentación del proyecto](https://thekelleys.org.uk/dnsmasq/doc.html).
 - [Linux kernel — IP sysctl](https://docs.kernel.org/networking/ip-sysctl.html).
