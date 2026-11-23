@@ -26,7 +26,7 @@ Els temps són una previsió orientativa. Al final de cada sessió s'anotarà el
 
 - Ordinador amfitrió amb VirtualBox i virtualització activada a BIOS/UEFI.
 - Connexió a Internet per descarregar actualitzacions i imatges ISO.
-- Imatges ISO d'Ubuntu Server 24.04 LTS per als servidors Linux, Debian 13 amb XFCE per al client Linux i Windows (versions autoritzades pel professorat).
+- Imatges ISO d'Ubuntu Server 26.04.1 LTS per als servidors Linux, Debian 13 amb XFCE per al client Linux i Windows (versions autoritzades pel professorat).
 - Espai lliure recomanat: almenys 100 GB per a les màquines i les instantànies.
 - Memòria RAM recomanada: 16 GB a l'amfitrió per executar les cinc màquines amb comoditat. Si l'equip té menys memòria, s'iniciaran només les màquines necessàries en cada prova, sempre que es puga mantenir l'entorn connectat.
 - GitHub, Trello i editor de Markdown.
