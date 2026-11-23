@@ -2,7 +2,7 @@
 
 ## 4.1. Funció
 
-`TV-COMMS` és una màquina virtual amb Ubuntu Server 24.04 LTS que actua com a encaminador entre la LAN (`192.168.10.0/24`) i la DMZ (`192.168.30.0/24`). També proporciona l'eixida a Internet mitjançant l'adaptador NAT de VirtualBox i allotjarà el servei DHCP de la LAN.
+`TV-COMMS` és una màquina virtual amb Ubuntu Server 26.04.1 LTS que actua com a encaminador entre la LAN (`192.168.10.0/24`) i la DMZ (`192.168.30.0/24`). També proporciona l'eixida a Internet mitjançant l'adaptador NAT de VirtualBox i allotjarà el servei DHCP de la LAN.
 
 ## 4.2. Interfícies
 
