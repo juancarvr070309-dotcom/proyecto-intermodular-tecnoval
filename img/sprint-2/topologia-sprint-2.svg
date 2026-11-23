@@ -9,7 +9,7 @@
 <text x="600" y="112" text-anchor="middle" class="t">Internet</text><text x="600" y="140" text-anchor="middle" class="small">VirtualBox NAT</text>
 <rect x="420" y="220" width="360" height="170" class="router"/>
 <text x="600" y="255" text-anchor="middle" class="t">TV-COMMS</text>
-<text x="600" y="290" text-anchor="middle" class="s">Ubuntu Server 24.04 LTS — encaminament + DHCP LAN</text>
+<text x="600" y="290" text-anchor="middle" class="s">Ubuntu Server 26.04.1 LTS — encaminament + DHCP LAN</text>
 <text x="600" y="325" text-anchor="middle" class="small">Exterior: NAT (IP automàtica)</text>
 <text x="600" y="352" text-anchor="middle" class="small">LAN: 192.168.10.1/24</text>
 <text x="600" y="378" text-anchor="middle" class="small">DMZ: 192.168.30.1/24</text>
@@ -29,7 +29,7 @@
 <text x="895" y="510" text-anchor="middle" class="t">DMZ — TecnoVal-DMZ</text>
 <text x="895" y="540" text-anchor="middle" class="s">192.168.30.0/24 · Xarxa interna VirtualBox</text>
 <rect x="790" y="570" width="210" height="75" class="box"/>
-<text x="895" y="600" text-anchor="middle" class="s">TV-DMZ</text><text x="895" y="625" text-anchor="middle" class="small">Ubuntu Server 24.04 LTS · 192.168.30.10</text>
+<text x="895" y="600" text-anchor="middle" class="s">TV-DMZ</text><text x="895" y="625" text-anchor="middle" class="small">Ubuntu Server 26.04.1 LTS · 192.168.30.10</text>
 <path d="M690 390 V430 H895 V470" class="line"/>
 <text x="600" y="700" text-anchor="middle" class="small">Els clients i servidors interns no tenen adaptador NAT propi. L'eixida exterior passa per TV-COMMS.</text>
 </svg>
