@@ -1,20 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="860" viewBox="0 0 1400 860">
-<defs><style>text{font-family:Arial,sans-serif;fill:#172033}.title{font-size:30px;font-weight:bold}.label{font-size:21px;font-weight:bold}.small{font-size:16px}.tiny{font-size:14px}.box{fill:#f5f8fc;stroke:#355070;stroke-width:2.5;rx:14}.zone{fill:#edf4ff;stroke:#527da8;stroke-width:2;stroke-dasharray:8 6;rx:18}.dmz{fill:#fff2e8;stroke:#bf6c31;stroke-width:2.5;stroke-dasharray:8 6;rx:18}.line{stroke:#43546b;stroke-width:3;fill:none}</style><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#43546b"/></marker></defs>
-<rect width="1400" height="860" fill="#fff"/><text x="700" y="48" text-anchor="middle" class="title">TecnoVal Asistencia IT — Diseño lógico de red</text>
-<rect x="555" y="82" width="290" height="74" class="box"/><text x="700" y="112" text-anchor="middle" class="label">Internet / ISP</text><text x="700" y="138" text-anchor="middle" class="small">Conexión del proveedor</text>
-<rect x="555" y="205" width="290" height="92" class="box"/><text x="700" y="240" text-anchor="middle" class="label">Firewall / Router</text><text x="700" y="268" text-anchor="middle" class="small">NAT · VLAN · reglas · VPN</text>
-<path d="M700 156 V205" class="line" marker-end="url(#arrow)"/>
-<rect x="515" y="350" width="370" height="90" class="box"/><text x="700" y="385" text-anchor="middle" class="label">Switch gestionable principal</text><text x="700" y="414" text-anchor="middle" class="small">Troncales 802.1Q / VLAN</text><path d="M700 297 V350" class="line" marker-end="url(#arrow)"/>
-<rect x="45" y="485" width="405" height="300" class="zone"/><text x="247" y="520" text-anchor="middle" class="label">Red interna</text>
-<rect x="70" y="550" width="165" height="88" class="box"/><text x="152" y="582" text-anchor="middle" class="label">Usuarios</text><text x="152" y="610" text-anchor="middle" class="small">VLAN 10</text>
-<rect x="260" y="550" width="165" height="88" class="box"/><text x="342" y="582" text-anchor="middle" class="label">Impresora</text><text x="342" y="610" text-anchor="middle" class="small">VLAN 50</text>
-<rect x="70" y="670" width="165" height="88" class="box"/><text x="152" y="702" text-anchor="middle" class="label">Wi-Fi invitados</text><text x="152" y="730" text-anchor="middle" class="small">VLAN 60</text>
-<rect x="260" y="670" width="165" height="88" class="box"/><text x="342" y="702" text-anchor="middle" class="label">Gestión</text><text x="342" y="730" text-anchor="middle" class="small">VLAN 40</text>
-<rect x="500" y="485" width="400" height="300" class="zone"/><text x="700" y="520" text-anchor="middle" class="label">Red de servidores</text>
-<rect x="535" y="550" width="160" height="88" class="box"/><text x="615" y="582" text-anchor="middle" class="label">Host 1</text><text x="615" y="610" text-anchor="middle" class="small">VM archivos</text>
-<rect x="710" y="550" width="160" height="88" class="box"/><text x="790" y="582" text-anchor="middle" class="label">Host 2</text><text x="790" y="607" text-anchor="middle" class="small">VM pruebas/gestión</text><text x="790" y="626" text-anchor="middle" class="tiny">+ VM comunicaciones</text>
-<rect x="610" y="670" width="180" height="88" class="box"/><text x="700" y="702" text-anchor="middle" class="label">NAS copias</text><text x="700" y="730" text-anchor="middle" class="small">VLAN 20 · 192.168.20.13</text>
-<rect x="950" y="485" width="405" height="300" class="dmz"/><text x="1152" y="520" text-anchor="middle" class="label">DMZ — VLAN 30</text>
-<rect x="1030" y="580" width="245" height="105" class="box"/><text x="1152" y="620" text-anchor="middle" class="label">Servidor web</text><text x="1152" y="650" text-anchor="middle" class="small">HTTPS público (opcional)</text><text x="1152" y="730" text-anchor="middle" class="small">Alojamiento externo previsto</text>
-<path d="M700 440 V465 H247 V485" class="line" marker-end="url(#arrow)"/><path d="M700 440 V485" class="line" marker-end="url(#arrow)"/><path d="M700 465 H1152 V485" class="line" marker-end="url(#arrow)"/>
-<text x="700" y="810" text-anchor="middle" class="tiny">Servidor de comunicaciones (VM): DNS/DHCP previsto · VLAN 20 · 192.168.20.10</text><text x="700" y="835" text-anchor="middle" class="tiny">El firewall controla el tráfico entre zonas. La DMZ no tiene acceso libre a la red interna.</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+<defs><style>
+text{font-family:Arial,sans-serif;fill:#172033}.title{font-size:30px;font-weight:bold}.label{font-size:21px;font-weight:bold}.small{font-size:16px}.tiny{font-size:14px}
+.box{fill:#f5f8fc;stroke:#355070;stroke-width:2.5;rx:14}.zone{fill:#edf4ff;stroke:#527da8;stroke-width:2;stroke-dasharray:8 6;rx:18}.dmz{fill:#fff2e8;stroke:#bf6c31;stroke-width:2.5;stroke-dasharray:8 6;rx:18}.line{stroke:#43546b;stroke-width:3;fill:none}
+</style></defs>
+<rect width="1400" height="900" fill="#fff"/>
+<text x="700" y="45" text-anchor="middle" class="title">TecnoVal Asistencia IT — Diseño lógico de red</text>
+<rect x="555" y="75" width="290" height="65" class="box"/><text x="700" y="105" text-anchor="middle" class="label">Internet / ISP</text><text x="700" y="128" text-anchor="middle" class="small">Conexión del proveedor</text>
+<rect x="555" y="175" width="290" height="85" class="box"/><text x="700" y="210" text-anchor="middle" class="label">Firewall / Router</text><text x="700" y="238" text-anchor="middle" class="small">NAT · VLAN · reglas · VPN</text>
+<path d="M700 140 V175" class="line"/>
+<rect x="500" y="315" width="400" height="85" class="box"/><text x="700" y="350" text-anchor="middle" class="label">Switch gestionable principal</text><text x="700" y="378" text-anchor="middle" class="small">1 × TP-Link TL-SG3428 propuesto</text>
+<path d="M700 260 V315" class="line"/>
+<rect x="500" y="455" width="400" height="85" class="box"/><text x="700" y="490" text-anchor="middle" class="label">Switch gestionable de acceso</text><text x="700" y="518" text-anchor="middle" class="small">1 × TP-Link TL-SG3428 propuesto</text>
+<path d="M700 400 V455" class="line"/><text x="720" y="432" class="tiny">Troncal 802.1Q · VLAN necesarias</text>
+<rect x="35" y="600" width="430" height="245" class="zone"/><text x="250" y="635" text-anchor="middle" class="label">Red de usuarios y periféricos</text>
+<rect x="60" y="670" width="180" height="70" class="box"/><text x="150" y="700" text-anchor="middle" class="label">Usuarios</text><text x="150" y="725" text-anchor="middle" class="small">VLAN 10 · 12 puestos</text>
+<rect x="260" y="670" width="180" height="70" class="box"/><text x="350" y="700" text-anchor="middle" class="label">Impresora</text><text x="350" y="725" text-anchor="middle" class="small">VLAN 50</text>
+<rect x="60" y="755" width="180" height="70" class="box"/><text x="150" y="785" text-anchor="middle" class="label">Wi-Fi invitados</text><text x="150" y="810" text-anchor="middle" class="small">VLAN 60</text>
+<rect x="260" y="755" width="180" height="70" class="box"/><text x="350" y="785" text-anchor="middle" class="label">Gestión</text><text x="350" y="810" text-anchor="middle" class="small">VLAN 40</text>
+<rect x="485" y="600" width="430" height="245" class="zone"/><text x="700" y="635" text-anchor="middle" class="label">Red de servidores</text>
+<rect x="510" y="675" width="180" height="70" class="box"/><text x="600" y="705" text-anchor="middle" class="label">Host 1</text><text x="600" y="730" text-anchor="middle" class="small">VM de servicios</text>
+<rect x="710" y="675" width="180" height="70" class="box"/><text x="800" y="705" text-anchor="middle" class="label">Host 2</text><text x="800" y="730" text-anchor="middle" class="small">VM de servicios</text>
+<rect x="610" y="765" width="180" height="60" class="box"/><text x="700" y="790" text-anchor="middle" class="label">NAS</text><text x="700" y="813" text-anchor="middle" class="small">VLAN 20 · copias</text>
+<rect x="935" y="600" width="430" height="245" class="dmz"/><text x="1150" y="635" text-anchor="middle" class="label">DMZ — VLAN 30</text>
+<rect x="1035" y="685" width="230" height="85" class="box"/><text x="1150" y="718" text-anchor="middle" class="label">Sin servidor web propio</text><text x="1150" y="746" text-anchor="middle" class="small">Reservada para futuro</text>
+<text x="1150" y="805" text-anchor="middle" class="small">Web fase 1: alojamiento externo</text>
+<path d="M700 540 V570 H250 V600" class="line"/><path d="M700 570 V600" class="line"/><path d="M700 570 H1150 V600" class="line"/>
+<text x="700" y="875" text-anchor="middle" class="tiny">Dos switches gestionables: principal y acceso. Firewall aplica las reglas entre VLAN; invitados y DMZ quedan aislados de redes internas.</text>
+</svg>
