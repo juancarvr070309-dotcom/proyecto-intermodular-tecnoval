@@ -12,7 +12,7 @@ Se comparan las alternativas según coste inicial y recurrente, seguridad, mante
 | Servidores | Tres equipos físicos separados | Dos hosts físicos con virtualización | Dos hosts, siempre que el dimensionamiento y la compatibilidad se verifiquen antes de comprar. |
 | Red | Switches no gestionables | Dos switches gestionables con VLAN | Dos switches gestionables de 24 puertos, con enlaces troncales 802.1Q. |
 | Seguridad perimetral | Router básico | Firewall/router con VLAN, reglas, VPN y registros | Firewall dedicado o solución integrada que cumpla los requisitos y tenga actualizaciones. |
-| Web corporativa | Servidor propio publicado desde la DMZ | Alojamiento web externo | **Alojamiento externo en la primera fase. No se instalará ni publicará un servidor web propio en la DMZ.** |
+| Web corporativa | Servidor propio publicado desde la DMZ | Alojamiento web externo | Servidor web propio DMZ en la primera fase. No se instalará ni publicará un alojamiento externo. |
 | Ofimática | Licencias comerciales por usuario | Suite libre | LibreOffice como opción inicial, validando compatibilidad con los documentos de clientes. |
 | Correo | Servidor de correo propio | Servicio de correo gestionado | Correo gestionado externo con dominio propio y MFA; no se alojará correo en la DMZ. |
 
