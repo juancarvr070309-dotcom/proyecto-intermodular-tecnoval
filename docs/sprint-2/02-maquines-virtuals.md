@@ -4,7 +4,7 @@
 
 El laboratori segueix l'estructura mínima del PDF: cinc màquines virtuals en total, de les quals només dues són clients de prova. No es crearà una màquina per cadascun dels 12 treballadors de TecnoVal.
 
-S'utilitzarà Ubuntu Server 24.04 LTS en els dos servidors Linux (`TV-COMMS` i `TV-DMZ`). Per al client Linux es proposa Debian 13 amb l'entorn gràfic XFCE: és lleuger, funciona bé amb 2 GB de RAM i permet practicar les ordres Linux sense carregar massa l'ordinador amfitrió. La versió de Windows Server i les ISO s'han de confirmar amb el professorat abans de la instal·lació.
+S'utilitzarà Ubuntu Server 26.04.1 LTS en els dos servidors Linux (`TV-COMMS` i `TV-DMZ`). Per al client Linux es proposa Debian 13 amb l'entorn gràfic XFCE: és lleuger, funciona bé amb 2 GB de RAM i permet practicar les ordres Linux sense carregar massa l'ordinador amfitrió. La versió de Windows Server i les ISO s'han de confirmar amb el professorat abans de la instal·lació.
 
 ## 2.2. Inventari de màquines
 
@@ -12,11 +12,11 @@ Els valors de RAM, CPU i disc són una proposta inicial. Cal anotar els valors r
 
 | Nom de la VM | Funció | Sistema proposat | RAM | CPU | Disc | Amfitrió |
 |---|---|---|---:|---:|---:|---|
-| `TV-COMMS` | Encaminament LAN/DMZ i DHCP | Ubuntu Server 24.04 LTS | 2 GB | 2 | 20 GB | Ordinador de laboratori acordat |
+| `TV-COMMS` | Encaminament LAN/DMZ i DHCP | Ubuntu Server 26.04.1 LTS | 2 GB | 2 | 20 GB | Ordinador de laboratori acordat |
 | `TV-SRVINT` | Servidor intern, preparat per al Sprint 3 | Windows Server (versió indicada pel professorat) | 4 GB | 2 | 60 GB | Mateix amfitrió |
 | `TV-CLIENT-WIN` | Client Windows de proves | Windows 11 Pro | 4 GB | 2 | 64 GB | Mateix amfitrió |
 | `TV-CLIENT-LINUX` | Client Linux de proves | Debian 13 amb XFCE | 2 GB | 2 | 25 GB | Mateix amfitrió |
-| `TV-DMZ` | Servidor Linux situat en la DMZ | Ubuntu Server 24.04 LTS | 1–2 GB | 1 | 20 GB | Mateix amfitrió |
+| `TV-DMZ` | Servidor Linux situat en la DMZ | Ubuntu Server 26.04.1 LTS | 1–2 GB | 1 | 20 GB | Mateix amfitrió |
 
 **RAM total orientativa:** 13–14 GB (segons la RAM assignada a TV-DMZ). Si l'ordinador no disposa de prou RAM, no s'han d'arrancar les cinc màquines alhora: es poden iniciar per fases, mantenint actius el servidor de comunicacions i els equips necessaris per a cada prova. No s'ha d'assignar a les VM tota la RAM física de l'amfitrió.
 
