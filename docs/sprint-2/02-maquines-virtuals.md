@@ -13,7 +13,7 @@ Los valores de RAM, CPU y disco son una propuesta inicial. Hay que anotar los va
 | Nombre de la VM | Función | Sistema propuesto | RAM | CPU | Disco | Anfitrión |
 |---|---|---|---:|---:|---:|---|
 | `TV-COMMS` | Enrutamiento LAN/DMZ y DHCP | Ubuntu Server 26.04.1 LTS | 2 GB | 2 | 20 GB | Ordenador de laboratorio acordado |
-| `TV-SRVINT` | Servidor interno, preparado para el Sprint 3 | Windows Server (versión indicada por el profesorado) | 4 GB | 2 | 60 GB | Mismo anfitrión |
+| `TV-SRVINT` | Servidor interno, preparado para el Sprint 3 | Windows Server 22 | 4 GB | 2 | 60 GB | Mismo anfitrión |
 | `TV-CLIENT-WIN` | Cliente Windows de pruebas | Windows 11 Pro | 4 GB | 2 | 64 GB | Mismo anfitrión |
 | `TV-CLIENT-LINUX` | Cliente Linux de pruebas | Debian 13 con XFCE | 2 GB | 2 | 25 GB | Mismo anfitrión |
 | `TV-DMZ` | Servidor Linux situado en la DMZ | Ubuntu Server 26.04.1 LTS | 1–2 GB | 1 | 20 GB | Mismo anfitrión |
