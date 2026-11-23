@@ -1,31 +1,31 @@
-# 5. Instal·lació i configuració del servei DHCP
+# 5. Instalación y configuración del servicio DHCP
 
-## 5.1. Objectiu
+## 5.1. Objetivo
 
-El servidor de comunicacions `TV-COMMS` assignarà automàticament la configuració IP als dos clients de la LAN: `TV-CLIENT-WIN` i `TV-CLIENT-LINUX`.
+El servidor de comunicaciones `TV-COMMS` asignará automáticamente la configuración IP a los dos clientes de la LAN: `TV-CLIENT-WIN` y `TV-CLIENT-LINUX`.
 
-El DHCP només escoltarà en la interfície LAN. No s'activarà en l'adaptador exterior ni en la DMZ. Els servidors conservaran adreces fixes.
+DHCP solo escuchará en la interfaz LAN. No se activará en el adaptador exterior ni en la DMZ. Los servidores conservarán direcciones fijas.
 
-## 5.2. Paràmetres del servei
+## 5.2. Parámetros del servicio
 
-| Paràmetre | Valor |
+| Parámetro | Valor |
 |---|---|
-| Xarxa | 192.168.10.0/24 |
-| Màscara | 255.255.255.0 |
-| Rang dinàmic | 192.168.10.100–192.168.10.150 |
-| Passarel·la | 192.168.10.1 |
-| IP fixes reservades | 192.168.10.1 (TV-COMMS), 192.168.10.10 (TV-SRVINT) |
-| Temps de concessió | 12 hores |
-| Interfície d'escolta | Interfície LAN de TV-COMMS |
-| DNS anunciat | Cap en aquest sprint; el DNS corporatiu es configura en el Sprint 3 |
+| Red | 192.168.10.0/24 |
+| Máscara | 255.255.255.0 |
+| Rango dinámico | 192.168.10.100–192.168.10.150 |
+| Puerta de enlace | 192.168.10.1 |
+| IP fijas reservadas | 192.168.10.1 (TV-COMMS), 192.168.10.10 (TV-SRVINT) |
+| Tiempo de concesión | 12 horas |
+| Interfaz de escucha | Interfaz LAN de TV-COMMS |
+| DNS anunciado | Ninguno en este sprint; el DNS corporativo se configura en el Sprint 3 |
 
-El rang DHCP no inclou les IP fixes. Per als dos clients hi ha prou adreces disponibles.
+El rango DHCP no incluye las IP fijas. Para los dos clientes hay suficientes direcciones disponibles.
 
-## 5.3. Servei proposat
+## 5.3. Servicio propuesto
 
-En Ubuntu Server 26.04.1 LTS es proposa `dnsmasq` utilitzat només com a servidor DHCP, amb la funció DNS desactivada. Abans d'instal·lar-lo, comprovar que el nom de la interfície LAN és correcte.
+En Ubuntu Server 26.04.1 LTS se propone `dnsmasq` utilizado solo como servidor DHCP, con la función DNS desactivada. Antes de instalarlo, comprobar que el nombre de la interfaz LAN es correcto.
 
-Exemple de configuració orientativa per a `/etc/dnsmasq.d/tecnoval-dhcp.conf` (substituir `INTERFICIE_LAN` pel nom real):
+Ejemplo de configuración orientativa para `/etc/dnsmasq.d/tecnoval-dhcp.conf` (sustituir `INTERFICIE_LAN` por el nombre real):
 
 ```ini
 port=0
@@ -37,17 +37,17 @@ dhcp-option=option:router,192.168.10.1
 dhcp-leasefile=/var/lib/misc/dnsmasq.leases
 ```
 
-La configuració no anuncia DNS perquè en aquest sprint no s'ha desplegat el DNS corporatiu i el PDF indica que no s'exigeix la resolució de noms. Si el professorat demana un DNS accessible, cal acordar quin s'utilitzarà abans d'afegir l'opció corresponent.
+La configuración no anuncia DNS porque en este sprint no se ha desplegado el DNS corporativo y el PDF indica que no se exige la resolución de nombres. Si el profesorado solicita un DNS accesible, hay que acordar cuál se utilizará antes de añadir la opción correspondiente.
 
-Després d'instal·lar i configurar el servei, comprovar la sintaxi i l'estat amb les ordres adequades a la versió instal·lada. No deixar el servei escoltant en l'exterior ni en la DMZ.
+Después de instalar y configurar el servicio, comprobar la sintaxis y el estado con los comandos adecuados a la versión instalada. No dejar el servicio escuchando en el exterior ni en la DMZ.
 
-## 5.4. Configuració dels clients
+## 5.4. Configuración de los clientes
 
 **Windows (TV-CLIENT-WIN):**
-1. Obrir les propietats de l'adaptador Ethernet.
-2. Seleccionar obtenció automàtica de l'adreça IP.
-3. Seleccionar obtenció automàtica de DNS (no s'espera DNS corporatiu en aquest sprint).
-4. Obrir terminal i executar:
+1. Abrir las propiedades del adaptador Ethernet.
+2. Seleccionar la obtención automática de la dirección IP.
+3. Seleccionar la obtención automática de DNS (no se espera DNS corporativo en este sprint).
+4. Abrir el terminal y ejecutar:
 
 ```powershell
 ipconfig /release
@@ -56,8 +56,8 @@ ipconfig /all
 ```
 
 **Linux (TV-CLIENT-LINUX):**
-1. Configurar la connexió cablejada perquè IPv4 utilitze automàticament DHCP.
-2. Desconnectar i tornar a connectar la connexió o renovar-la des del gestor de xarxa.
+1. Configurar la conexión cableada para que IPv4 utilice DHCP automáticamente.
+2. Desconectar y volver a conectar la conexión o renovarla desde el gestor de red.
 3. Consultar:
 
 ```bash
@@ -66,24 +66,24 @@ ip route
 nmcli device show
 ```
 
-Els dos clients han de rebre una IP entre `192.168.10.100` i `192.168.10.150`, màscara /24 i passarel·la `192.168.10.1`.
+Los dos clientes deben recibir una IP entre `192.168.10.100` y `192.168.10.150`, máscara /24 y puerta de enlace `192.168.10.1`.
 
-## 5.5. Revisió de concessions
+## 5.5. Revisión de concesiones
 
-Consultar el fitxer de concessions configurat en dnsmasq:
+Consultar el archivo de concesiones configurado en dnsmasq:
 ```bash
 sudo cat /var/lib/misc/dnsmasq.leases
 ```
 
-Han d'aparéixer les concessions dels dos clients amb la seua IP i MAC. Si el fitxer no existeix o està buit, comprovar que els clients han sol·licitat DHCP i que el servei escolta en la interfície LAN correcta.
+Deben aparecer las concesiones de los dos clientes con su IP y MAC. Si el archivo no existe o está vacío, comprobar que los clientes han solicitado DHCP y que el servicio escucha en la interfaz LAN correcta.
 
-## 5.6. Evidències
+## 5.6. Evidencias
 
-Guardar captures reals:
-- `11-dhcp-config.png`: fitxer de configuració sense dades sensibles.
-- `12-dhcp-status.png`: estat del servei.
-- `13-dhcp-leases.png`: concessions dels dos clients.
-- `14-client-win-dhcp.png`: `ipconfig /all` del client Windows.
-- `15-client-linux-dhcp.png`: `ip -br address` i `ip route` del client Linux.
+Guardar capturas reales:
+- `11-dhcp-config.png`: archivo de configuración sin datos sensibles.
+- `12-dhcp-status.png`: estado del servicio.
+- `13-dhcp-leases.png`: concesiones de los dos clientes.
+- `14-client-win-dhcp.png`: `ipconfig /all` del cliente Windows.
+- `15-client-linux-dhcp.png`: `ip -br address` e `ip route` del cliente Linux.
 
-No s'ha de donar per complet el DHCP fins que els dos clients obtinguen les dades correctes i apareguen les seues concessions al servidor.
+No se debe dar por completado DHCP hasta que los dos clientes obtengan los datos correctos y aparezcan sus concesiones en el servidor.
