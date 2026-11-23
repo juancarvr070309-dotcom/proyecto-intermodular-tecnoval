@@ -1,76 +1,89 @@
-# 6. Presupuesto estimado
+# 6. Presupuesto y viabilidad económica
 
-## 6.1. Criterios
-El presupuesto es una estimación académica basada en precios consultados en tiendas y catálogos online. Los importes pueden cambiar según disponibilidad, configuración, envío y proveedor. Para los equipos sin precio público comparable se indica que es una estimación pendiente de presupuesto formal.
+## 6.1. Criterios de cálculo
 
-Se muestran importes con IVA incluido cuando la fuente lo indica. Para partidas estimadas se aplica un IVA del 21% como hipótesis de cálculo para una compra ordinaria en la península; se debe confirmar el tratamiento fiscal en la factura del proveedor.
+Este presupuesto es una **estimación académica preliminar**, no una oferta ni una orden de compra. Un enlace a la página general de una tienda no acredita por sí solo el precio de un modelo. Para considerar un precio verificado se debe guardar la ficha del producto exacto, fecha de consulta, precio con IVA, transporte y condiciones de garantía.
 
-## 6.2. Hardware y red
+Los importes anteriores se conservan como referencias provisionales para no presentar como comprobados precios que todavía no tienen una oferta vigente. El presupuesto definitivo queda pendiente de recibir cotizaciones.
 
-| Elemento | Cantidad | Precio unitario (IVA incl.) | Subtotal (IVA incl.) | Fuente / observación |
+## 6.2. Hardware: referencias preliminares
+
+| Elemento | Cantidad | Importe unitario anterior | Subtotal anterior | Estado de verificación / acción necesaria |
 |---|---:|---:|---:|---|
-| PC profesional NTT ProDesk i5, 16 GB RAM, SSD 512 GB, Windows 11 Pro | 12 | 798,02 € | 9.576,24 € | [DistriNode](https://distrinode.es/ntt-prodesk-ordenador-de-sobremesa-intel-core-i5-14400-16gb-ram-512gb-ssd-wi-fi-windows-11-pro-zko-i5h610ddr5-h01p). Precio consultado. |
-| Portátil profesional de reserva | 1 | 850,00 € | 850,00 € | Estimación; solicitar presupuesto. |
-| Host físico para virtualización | 2 | 1.700,00 € | 3.400,00 € | Estimación para equipo ampliable con 32–64 GB RAM; solicitar presupuesto. |
-| NAS QNAP TS-464-8G | 1 | 841,28 € | 841,28 € | [Senetic](https://www.senetic.es/). Precio de referencia mostrado con IVA. |
-| Switch TP-Link TL-SG3428 gestionable | 2 | 239,70 € | 479,40 € | [Mauser](https://mauser.es/informatica-y-telecomunicaciones/redes/tp-link-omada). Precio consultado. |
-| Firewall/router empresarial | 1 | 450,00 € | 450,00 € | Estimación; solicitar presupuesto. |
-| Punto de acceso Wi-Fi 6 | 2 | 110,00 € | 220,00 € | Estimación por unidad; confirmar modelo. |
-| Impresora multifunción de red | 1 | 250,00 € | 250,00 € | Estimación; confirmar consumibles. |
-| Discos externos para copia | 2 | 130,00 € | 260,00 € | Estimación por unidad, capacidad orientativa 4 TB. |
-| SAI para equipos críticos | 2 | 220,00 € | 440,00 € | Estimación; dimensionar según consumo. |
-| Cableado, paneles, tomas y accesorios | 1 lote | 400,00 € | 400,00 € | Estimación; requiere medir oficina y pedir instalación. |
-| **Subtotal hardware** | | | **17.166,92 €** | |
+| PC NTT ProDesk i5, 16 GB, SSD 512 GB, Windows 11 Pro | 12 | 798,02 € | 9.576,24 € | Precio de referencia enlazado; volver a consultar la ficha exacta y confirmar stock, IVA y garantía. |
+| Portátil profesional de reserva | 1 | 850,00 € | 850,00 € | Estimación sin modelo; seleccionar modelo y obtener oferta. |
+| Host físico de virtualización | 2 | 1.700,00 € | 3.400,00 € | Estimación sin modelo; no se puede validar CPU, RAM, almacenamiento, NIC ni compatibilidad. Solicitar dos ofertas con especificación completa. |
+| NAS QNAP TS-464-8G | 1 | 841,28 € | 841,28 € | Precio anterior pendiente de verificar en ficha exacta. **La carcasa se vende sin discos.** |
+| Discos NAS Seagate IronWolf 8 TB (ST8000VN004) | 4 | Pendiente | Pendiente | Partida obligatoria que faltaba. Confirmar compatibilidad en QNAP y pedir precio de cuatro unidades. |
+| Switch TP-Link TL-SG3428 | 2 | 239,70 € | 479,40 € | Precio anterior pendiente de confirmar para el modelo y revisión exactos. |
+| Firewall/router | 1 | 450,00 € | 450,00 € | Estimación sin modelo; falta ficha, rendimiento, licencias y soporte. |
+| Punto de acceso Wi-Fi 6 | 2 | 110,00 € | 220,00 € | Estimación sin modelo; confirmar VLAN, alimentación/PoE y accesorios. |
+| Impresora multifunción | 1 | 250,00 € | 250,00 € | Estimación sin modelo; añadir consumibles y coste de mantenimiento. |
+| Discos externos para copia | 2 | 130,00 € | 260,00 € | Estimación; confirmar capacidad, cifrado y modelo. |
+| SAI | 2 | 220,00 € | 440,00 € | Estimación sin modelo; dimensionar en W y autonomía tras medir la carga. |
+| Cableado, paneles, tomas y accesorios | 1 lote | 400,00 € | 400,00 € | Estimación; requiere medición y presupuesto de instalación. |
+| **Subtotal de referencias anteriores** | | | **17.166,92 €** | **No es el coste completo:** excluye discos NAS y partidas aún no cotizadas; contiene importes estimados. |
 
 ## 6.3. Software y servicios
 
-| Elemento | Cantidad | Precio unitario | Subtotal | Fuente / observación |
-|---|---:|---:|---:|---|
-| LibreOffice | 12 usuarios | 0,00 € | 0,00 € | Software libre; comprobar compatibilidad. |
-| Proxmox VE, edición sin suscripción | 1 plataforma | 0,00 € | 0,00 € | [Proxmox](https://www.proxmox.com/en/proxmox-virtual-environment/pricing). Valorar soporte si se necesita. |
-| Sistema de incidencias y soporte remoto | 1 solución inicial | 0,00 € | 0,00 € | Se estudiará herramienta libre; cotizar licencias comerciales si fueran necesarias. |
-| Dominio y alojamiento web | 1 año | 150,00 € | 150,00 € | Estimación anual, pendiente de proveedor. |
-| Correo corporativo | 12 cuentas | 0,00 € | 0,00 € | Se supone incluido en solución existente o libre; añadir cuota si se contrata servicio comercial. |
-| **Subtotal software y servicios** | | | **150,00 €** | |
+| Elemento | Cantidad | Coste conocido | Estado / coste que falta |
+|---|---:|---:|---|
+| LibreOffice | 12 usuarios | 0,00 € de licencia | Sin coste de licencia; considerar soporte y formación si se contratan. |
+| Proxmox VE sin suscripción | 1 plataforma | 0,00 € de descarga | La suscripción de soporte es opcional; decidir nivel y coste si se requiere. |
+| Sistema de incidencias y soporte remoto | 1 solución | No cerrado | Seleccionar herramienta y confirmar condiciones/licencias. |
+| Dominio y alojamiento web externo | 1 año | 150,00 € estimados | Sustituir por oferta del proveedor, renovación y certificado/servicios incluidos. |
+| Correo corporativo | 12 cuentas | No cerrado | Añadir cuota anual de 12 buzones, dominio, antispam y MFA si tiene coste. |
+| Protección endpoint/EDR | 12 equipos | No cerrado | Añadir licencia por equipo y renovación anual. |
+| Copia externa cifrada | 1 servicio o soporte | No cerrado | Añadir coste de almacenamiento externo, discos rotatorios o servicio cloud. |
+| Firewall/VPN y soporte | 1 solución | No cerrado | Añadir licencias, suscripción de seguridad y soporte si el modelo los requiere. |
 
-## 6.4. Resumen económico
+## 6.4. Costes de implantación y mantenimiento que faltaban
+
+| Partida | Criterio para calcularla | Estado |
+|---|---|---|
+| Instalación y configuración | Horas de técnico × tarifa acordada; incluir hosts, NAS, switches, firewall, Wi-Fi y migración | Pendiente de presupuesto |
+| Cableado e instalación física | Metros, tomas, canaletas, paneles, certificación y mano de obra | Pendiente de visita/medición |
+| Transporte y puesta en marcha | Coste indicado por cada proveedor | Pendiente |
+| Garantía ampliada y soporte | Años y cobertura de hosts, NAS, discos, switches y firewall | Pendiente |
+| Electricidad | Consumo estimado de hosts, NAS, red y SAI × horas de uso × tarifa €/kWh | Pendiente de medición |
+| Mantenimiento anual | Horas de revisión, actualizaciones, monitorización y pruebas de recuperación | Pendiente de definir |
+| Renovaciones | Dominio, hosting, correo, endpoint, firewall y suscripciones | Pendiente de cotización |
+| Formación | Horas necesarias para administración de Proxmox, NAS, firewall y copias | Pendiente de estimación |
+
+## 6.5. Resumen económico correcto
+
+El subtotal de **17.166,92 €** solo suma las referencias antiguas de hardware. El subtotal anterior de software/servicios de 150 € y el total antiguo de 19.048,61 € no deben presentarse como presupuesto final porque faltan, entre otros, los cuatro discos del NAS, precios verificables de varios equipos, servicios recurrentes, instalación y mantenimiento.
+
+Por tanto, el **total final está pendiente**. Se calculará cuando se reciban las cotizaciones y se complete esta tabla:
 
 | Concepto | Importe |
 |---|---:|
-| Subtotal hardware | 17.166,92 € |
-| Subtotal software y servicios | 150,00 € |
-| **Subtotal antes de contingencia** | **17.316,92 €** |
-| Reserva para imprevistos (10%) | 1.731,69 € |
-| **TOTAL ESTIMADO** | **19.048,61 €** |
+| Hardware completo (incluidos cuatro discos NAS y accesorios) | Pendiente |
+| Software y servicios del primer año | Pendiente |
+| Instalación, transporte y puesta en marcha | Pendiente |
+| Mantenimiento y soporte del primer año | Pendiente |
+| **Coste total del primer año** | **Pendiente de cotizaciones** |
+| Renovaciones y mantenimiento de años siguientes | Pendiente |
 
-Los precios publicados ya incluyen IVA cuando la tienda lo especifica. Las partidas estimadas se han expresado como importes finales orientativos con IVA incluido para facilitar la comparación. Antes de comprar se debe solicitar presupuesto desglosado con base imponible, IVA, transporte, instalación y garantía.
+No se aplicará un IVA genérico a importes que ya pudieran incluirlo. Cada oferta debe indicar base imponible, IVA y total final para evitar duplicar impuestos.
 
-## 6.5. Justificación económica y viabilidad por fases
-El total de 19.048,61 € es una estimación de inversión inicial, no una compra aprobada. La empresa ficticia tiene 12 trabajadores, pero no se ha definido una facturación, beneficio ni tesorería real; por tanto, no sería correcto afirmar que puede pagar todo el importe de una sola vez. La viabilidad económica queda condicionada a la aprobación de Dirección, a comparar ofertas y a confirmar el presupuesto disponible.
+## 6.6. Viabilidad económica y despliegue por fases
 
-Se propone implantar por fases para repartir la inversión y priorizar la continuidad del negocio:
+La inversión debe aprobarla Dirección tras comparar al menos dos ofertas para las partidas principales. La implantación se puede dividir así:
 
-1. **Fase prioritaria:** firewall/router, switches gestionables, cableado esencial y puestos que realmente necesiten renovación. Confirmar primero el inventario del Bloque 1 para evitar comprar ordenadores duplicados.
-2. **Fase de servicios y protección:** hosts de virtualización, NAS, SAI y solución de copias; realizar pruebas de restauración antes de considerar el servicio operativo.
-3. **Fase de ampliación:** puntos de acceso, equipo de reserva, mejoras de seguridad y servicios opcionales, según necesidad y presupuesto aprobado.
+1. **Fase 1 — conectividad y seguridad:** firewall, dos switches, cableado, VLAN y puntos de acceso.
+2. **Fase 2 — servicios internos:** hosts, hipervisor, NAS con cuatro discos, SAI, DNS/DHCP, archivos y copias.
+3. **Fase 3 — servicios de usuario:** correo gestionado, protección endpoint, web externa y sistema de incidencias.
 
-La compra por fases puede reducir el desembolso inmediato, pero no reduce por sí misma el coste total estimado. Cada fase debe contar con financiación y revisión de precios.
+La compra por fases distribuye el desembolso, pero no elimina el coste total ni permite dejar sin protección los datos. Antes de almacenar información de producción en el NAS deben estar operativas las copias externas y las pruebas de restauración.
 
-- Los 12 ordenadores corresponden a los 12 trabajadores definidos en el Bloque 1.
-- El portátil adicional es de reserva y no sustituye ningún puesto fijo.
-- Los dos hosts permiten virtualizar archivos, pruebas y gestión; el NAS se dedica a copias.
-- Los dos switches permiten conectar puestos y servidores y crear VLAN.
-- El firewall controla el tráfico entre Internet, red interna y DMZ.
-- Los puntos de acceso y la impresora son recursos compartidos.
-- Se prioriza software libre para reducir gastos recurrentes.
-- La reserva del 10% cubre variaciones de precio, accesorios o necesidades detectadas.
+## 6.7. Fuentes técnicas para comprobar modelos
 
-## 6.6. Límites
-No se incluye personal, electricidad, mantenimiento anual, contratación de Internet, licencias comerciales opcionales, ampliación de discos del NAS ni instalación profesional del cableado. Tampoco se ha recibido una oferta formal para hosts, firewall, puntos de acceso, impresora, SAI y accesorios. El total sirve para valorar la viabilidad, no como orden de compra.
-
-## 6.7. Fuentes de precios
-- [DistriNode – NTT ProDesk i5 16 GB / 512 GB / Windows 11 Pro](https://distrinode.es/ntt-prodesk-ordenador-de-sobremesa-intel-core-i5-14400-16gb-ram-512gb-ssd-wi-fi-windows-11-pro-zko-i5h610ddr5-h01p).
-- [Senetic – catálogo de NAS QNAP y Synology](https://www.senetic.es/).
-- [Mauser – catálogo TP-Link Omada y switches gestionables](https://mauser.es/informatica-y-telecomunicaciones/redes/tp-link-omada).
+- [QNAP TS-464 – especificaciones oficiales](https://www.qnap.com/es-es/product/ts-464/specs/hardware/1000). El fabricante indica cuatro bahías SATA y que las unidades se venden por separado.
+- [QNAP – compatibilidad de discos](https://www.qnap.com/compatibility/).
+- [Seagate IronWolf – especificaciones de modelos NAS](https://www.seagate.com/es/es/support/internal-hard-drives/nas-drives/ironwolf/).
+- [TP-Link TL-SG3428 – ficha oficial](https://www.tp-link.com/es/business-networking/omada-switch-smart/tl-sg3428/).
 - [Proxmox VE – opciones de suscripción](https://www.proxmox.com/en/proxmox-virtual-environment/pricing).
-- [LibreOffice – descarga y licencias](https://www.libreoffice.org/).
+- [Eaton – documentación de SAI y autonomía](https://www.eaton.com/).
+
+**Criterio de cierre:** no se aprobará el presupuesto como definitivo hasta adjuntar fichas de los modelos exactos, cotizaciones fechadas y cálculo de coste del primer año y de mantenimiento.
