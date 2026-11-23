@@ -1,75 +1,75 @@
-# 1. Pla d'intervenció i organització del treball
+# 1. Plan de intervención y organización del trabajo
 
-## 1.1. Objectiu
+## 1.1. Objetivo
 
-Implantar una infraestructura de laboratori per a TecnoVal Asistencia IT, basada en el disseny del Sprint 1. Es configuraran una xarxa LAN, una DMZ separada, un servidor Linux d'encaminament i DHCP, i dos clients de prova (Windows i Linux).
+Implantar una infraestructura de laboratorio para TecnoVal Asistencia IT, basada en el diseño del Sprint 1. Se configurarán una red LAN, una DMZ separada, un servidor Linux de enrutamiento y DHCP, y dos clientes de prueba (Windows y Linux).
 
-**Important sobre les màquines:** el PDF estableix cinc equips en total: servidor de comunicacions Linux, servidor intern Windows, client Windows, client Linux i servidor Linux de la DMZ. Per tant, només dos són clients. Es manté aquesta estructura mínima del professorat sense crear màquines per als 12 treballadors de l'empresa.
+**Importante sobre las máquinas:** el PDF establece cinco equipos en total: servidor de comunicaciones Linux, servidor interno Windows, cliente Windows, cliente Linux y servidor Linux de la DMZ. Por tanto, solo dos son clientes. Se mantiene esta estructura mínima indicada por el profesorado, sin crear máquinas para los 12 trabajadores de la empresa.
 
-## 1.2. Seqüència, dependències i temps previst
+## 1.2. Secuencia, dependencias y tiempo previsto
 
-| Setmana | Tasques | Dependència | Responsable principal | Col·laborador |
+| Semana | Tareas | Dependencia | Responsable principal | Colaborador |
 |---|---|---|---|---|
-| 1 | Revisar IP, versions, capacitat dels ordinadors i preparar VirtualBox/ISOs | Cap | Juan Carlos | Isaac |
-| 1 | Crear les cinc màquines i instal·lar els sistemes | Recursos preparats | Isaac | Juan Carlos |
-| 2 | Crear LAN i DMZ virtuals; configurar noms i IP fixes | Màquines instal·lades | Isaac | Juan Carlos |
-| 3 | Configurar encaminament IPv4 i connectivitat exterior | Interfícies configurades | Isaac | Juan Carlos |
-| 3 | Instal·lar i configurar DHCP només per a la LAN | Encaminament i LAN operatius | Isaac | Juan Carlos |
-| 4 | Configurar clients per DHCP i fer proves de connectivitat | DHCP operatiu | Juan Carlos | Isaac |
-| 4 | Corregir incidències i repetir proves | Resultats de proves | Ambdós | Ambdós |
-| 5 | Completar captures, documentació, diagrama i revisió final | Configuració acabada | Juan Carlos | Isaac |
-| 5 | Revisar GitHub, Trello i preparar lliurament | Documents revisats | Ambdós | Ambdós |
+| 1 | Revisar IP, versiones, capacidad de los ordenadores y preparar VirtualBox/ISO | Ninguna | Juan Carlos | Isaac |
+| 1 | Crear las cinco máquinas e instalar los sistemas | Recursos preparados | Isaac | Juan Carlos |
+| 2 | Crear LAN y DMZ virtuales; configurar nombres e IP fijas | Máquinas instaladas | Isaac | Juan Carlos |
+| 3 | Configurar enrutamiento IPv4 y conectividad exterior | Interfaces configuradas | Isaac | Juan Carlos |
+| 3 | Instalar y configurar DHCP solo para la LAN | Enrutamiento y LAN operativos | Isaac | Juan Carlos |
+| 4 | Configurar clientes mediante DHCP y realizar pruebas de conectividad | DHCP operativo | Juan Carlos | Isaac |
+| 4 | Corregir incidencias y repetir pruebas | Resultados de las pruebas | Ambos | Ambos |
+| 5 | Completar capturas, documentación, diagrama y revisión final | Configuración terminada | Juan Carlos | Isaac |
+| 5 | Revisar GitHub, Trello y preparar la entrega | Documentos revisados | Ambos | Ambos |
 
-Els temps són una previsió orientativa. Al final de cada sessió s'anotarà el temps real i el treball pendent en Trello i en el document 07.
+Los tiempos son una previsión orientativa. Al final de cada sesión se anotará el tiempo real y el trabajo pendiente en Trello y en el documento 07.
 
-## 1.3. Recursos materials i programari
+## 1.3. Recursos materiales y software
 
-- Ordinador amfitrió amb VirtualBox i virtualització activada a BIOS/UEFI.
-- Connexió a Internet per descarregar actualitzacions i imatges ISO.
-- Imatges ISO d'Ubuntu Server 26.04.1 LTS per als servidors Linux, Debian 13 amb XFCE per al client Linux i Windows (versions autoritzades pel professorat).
-- Espai lliure recomanat: almenys 100 GB per a les màquines i les instantànies.
-- Memòria RAM recomanada: 16 GB a l'amfitrió per executar les cinc màquines amb comoditat. Si l'equip té menys memòria, s'iniciaran només les màquines necessàries en cada prova, sempre que es puga mantenir l'entorn connectat.
-- GitHub, Trello i editor de Markdown.
+- Ordenador anfitrión con VirtualBox y virtualización activada en BIOS/UEFI.
+- Conexión a Internet para descargar actualizaciones e imágenes ISO.
+- Imágenes ISO de Ubuntu Server 26.04.1 LTS para los servidores Linux, Debian 13 con XFCE para el cliente Linux y Windows (versiones autorizadas por el profesorado).
+- Espacio libre recomendado: al menos 100 GB para las máquinas y las instantáneas.
+- Memoria RAM recomendada: 16 GB en el anfitrión para ejecutar las cinco máquinas con comodidad. Si el equipo tiene menos memoria, se iniciarán solo las máquinas necesarias en cada prueba, siempre que se pueda mantener el entorno conectado.
+- GitHub, Trello y editor de Markdown.
 
-## 1.4. Distribució de les màquines
+## 1.4. Distribución de las máquinas
 
-Per simplificar la pràctica, la primera opció és allotjar les cinc màquines virtuals en **un mateix ordinador amfitrió**. Així, les xarxes internes de VirtualBox anomenades `TecnoVal-LAN` i `TecnoVal-DMZ` seran compartides per totes les màquines del laboratori.
+Para simplificar la práctica, la primera opción es alojar las cinco máquinas virtuales en **un mismo ordenador anfitrión**. Así, las redes internas de VirtualBox llamadas `TecnoVal-LAN` y `TecnoVal-DMZ` serán compartidas por todas las máquinas del laboratorio.
 
-Si es reparteixen entre els dos ordinadors físics dels integrants, les xarxes internes amb el mateix nom no es connectaran automàticament. En eixe cas, caldrà acordar amb el professorat una connexió física comuna (per exemple, adaptadors en pont a una xarxa de laboratori controlada) i comprovar que no es connecta accidentalment a la xarxa real de l'aula.
+Si se reparten entre los dos ordenadores físicos de los integrantes, las redes internas con el mismo nombre no se conectarán automáticamente. En ese caso, habrá que acordar con el profesorado una conexión física común (por ejemplo, adaptadores en modo puente a una red de laboratorio controlada) y comprobar que no se conecta accidentalmente a la red real del aula.
 
-## 1.5. Permisos i autoritzacions
+## 1.5. Permisos y autorizaciones
 
-- Utilitzar únicament els ordinadors i les xarxes autoritzats pel professorat.
-- No modificar la configuració de la xarxa física del centre ni del router de l'aula.
-- No connectar la LAN o la DMZ de proves a la xarxa real sense autorització.
-- Utilitzar les ISO i llicències facilitades o autoritzades pel centre.
-- Informar el professorat si falta algun permís, recurs o versió de programari.
+- Utilizar únicamente los ordenadores y las redes autorizados por el profesorado.
+- No modificar la configuración de la red física del centro ni del router del aula.
+- No conectar la LAN o la DMZ de pruebas a la red real sin autorización.
+- Utilizar las ISO y licencias facilitadas o autorizadas por el centro.
+- Informar al profesorado si falta algún permiso, recurso o versión de software.
 
-## 1.6. Riscos i mesures preventives
+## 1.6. Riesgos y medidas preventivas
 
-| Risc | Mesura preventiva | Mitjà de protecció o recuperació |
+| Riesgo | Medida preventiva | Medio de protección o recuperación |
 |---|---|---|
-| Fatiga per treball prolongat davant de pantalles | Fer pauses curtes, ajustar la postura i la il·luminació i seguir les normes de l'aula | Cadira i pantalla ben ajustades |
-| Manipulació de cables o connexions elèctriques | No obrir equips ni manipular endolls amb les mans humides; demanar ajuda al professorat | Regletes en bon estat i supervisió |
-| Pèrdua de dades o configuracions | Fer instantànies abans de canvis importants i còpies dels fitxers de configuració | Instantànies de VirtualBox i còpia de la documentació |
-| Canvis de xarxa que afecten altres equips | Utilitzar xarxes internes virtuals i no modificar la xarxa física | Aïllament de VirtualBox i autorització docent |
-| Sobrecàrrega de RAM o disc | Comprovar recursos abans d'arrancar totes les VM | Apagar VM no necessàries i alliberar espai |
+| Fatiga por trabajar durante mucho tiempo frente a pantallas | Hacer pausas cortas, ajustar la postura y la iluminación y seguir las normas del aula | Silla y pantalla bien ajustadas |
+| Manipulación de cables o conexiones eléctricas | No abrir equipos ni manipular enchufes con las manos húmedas; pedir ayuda al profesorado | Regletas en buen estado y supervisión |
+| Pérdida de datos o configuraciones | Crear instantáneas antes de cambios importantes y copias de los archivos de configuración | Instantáneas de VirtualBox y copia de la documentación |
+| Cambios de red que afectan a otros equipos | Utilizar redes internas virtuales y no modificar la red física | Aislamiento de VirtualBox y autorización docente |
+| Sobrecarga de RAM o disco | Comprobar los recursos antes de iniciar todas las VM | Apagar las VM innecesarias y liberar espacio |
 
 ## 1.7. Imprevistos previstos
 
-| Imprevist | Solució prevista |
+| Imprevisto | Solución prevista |
 |---|---|
-| Falta de memòria RAM | Reduir temporalment la RAM assignada dins dels límits del sistema, tancar aplicacions de l'amfitrió i executar les proves per fases. |
-| Espai de disc insuficient | Esborrar ISO duplicades i instantànies antigues després de comprovar que no són necessàries; ampliar l'espai amb autorització. |
-| Una instal·lació no arranca | Revisar l'ordre d'arrancada, la ISO i la configuració de la VM; tornar a una instantània o repetir la instal·lació. |
-| Les dues xarxes virtuals no es comuniquen | Revisar el nom exacte de les xarxes, els adaptadors i les IP; comprovar que totes les VM estan en el mateix amfitrió o en una xarxa física comuna autoritzada. |
+| Falta de memoria RAM | Reducir temporalmente la RAM asignada dentro de los límites del sistema, cerrar aplicaciones del anfitrión y ejecutar las pruebas por fases. |
+| Espacio de disco insuficiente | Eliminar ISO duplicadas e instantáneas antiguas después de comprobar que no son necesarias; ampliar el espacio con autorización. |
+| Una instalación no arranca | Revisar el orden de arranque, la ISO y la configuración de la VM; volver a una instantánea o repetir la instalación. |
+| Las dos redes virtuales no se comunican | Revisar el nombre exacto de las redes, los adaptadores y las IP; comprobar que todas las VM están en el mismo anfitrión o en una red física común autorizada. |
 
-## 1.8. Seguiment
+## 1.8. Seguimiento
 
-Al final de cada sessió, Juan Carlos i Isaac revisaran les targetes de Trello, anotaran el temps real, les tasques acabades, les incidències i el següent pas. Si una desviació posa en risc el termini o canvia l'abast, s'informarà el professorat i es registrarà l'acord en el document 07.
+Al final de cada sesión, Juan Carlos e Isaac revisarán las tarjetas de Trello, anotarán el tiempo real, las tareas terminadas, las incidencias y el siguiente paso. Si una desviación pone en riesgo el plazo o cambia el alcance, se informará al profesorado y se registrará el acuerdo en el documento 07.
 
-**Tauler Trello:** [Proyecto Intermodular — TecnoVal Assistència IT](https://trello.com/b/PPo2BEAZ/proyecto-intermodular-tecnoval-assistencia-it-juan-carlos-isaac-beltran).
+**Tablero de Trello:** [Proyecto Intermodular — TecnoVal Assistència IT](https://trello.com/b/PPo2BEAZ/proyecto-intermodular-tecnoval-assistencia-it-juan-carlos-isaac-beltran).
 
-## 1.9. Distribució del treball
+## 1.9. Distribución del trabajo
 
-Els dos integrants participaran en la instal·lació, les proves i la documentació. Com a repartiment inicial, Isaac coordinarà la configuració de xarxa i dels servidors, mentre Juan Carlos coordinarà el registre de proves, les captures i la documentació. Les decisions i comprovacions finals es faran conjuntament. El repartiment es podrà ajustar segons el treball real de cada sessió.
+Los dos integrantes participarán en la instalación, las pruebas y la documentación. Como reparto inicial, Isaac coordinará la configuración de red y de los servidores, mientras que Juan Carlos coordinará el registro de pruebas, las capturas y la documentación. Las decisiones y comprobaciones finales se harán conjuntamente. El reparto se podrá ajustar según el trabajo real de cada sesión.
