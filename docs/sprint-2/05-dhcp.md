@@ -23,7 +23,7 @@ El rang DHCP no inclou les IP fixes. Per als dos clients hi ha prou adreces disp
 
 ## 5.3. Servei proposat
 
-En Ubuntu Server 24.04 LTS es proposa `dnsmasq` utilitzat només com a servidor DHCP, amb la funció DNS desactivada. Abans d'instal·lar-lo, comprovar que el nom de la interfície LAN és correcte.
+En Ubuntu Server 26.04.1 LTS es proposa `dnsmasq` utilitzat només com a servidor DHCP, amb la funció DNS desactivada. Abans d'instal·lar-lo, comprovar que el nom de la interfície LAN és correcte.
 
 Exemple de configuració orientativa per a `/etc/dnsmasq.d/tecnoval-dhcp.conf` (substituir `INTERFICIE_LAN` pel nom real):
 
