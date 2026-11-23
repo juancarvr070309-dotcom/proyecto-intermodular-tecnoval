@@ -4,65 +4,81 @@
 
 | Fase | Actividades | Resultado esperado |
 |---|---|---|
-| 1. Análisis | Revisar la empresa, los departamentos, los usuarios, los servicios y las necesidades TIC. | Documento de necesidades aprobado. |
-| 2. Diseño | Comparar alternativas, elegir soluciones, diseñar la topología, las VLAN, el direccionamiento IP y los recursos. | Diseño técnico y presupuesto. |
-| 3. Implantación | Preparar los equipos y, cuando se autorice la ejecución, instalar y configurar los servicios previstos. | Infraestructura implantada según el diseño. |
-| 4. Pruebas | Comprobar conectividad, permisos, aislamiento entre VLAN, copias de seguridad y acceso a los servicios. | Registro de pruebas e incidencias. |
-| 5. Documentación | Actualizar diagramas, inventario, direccionamiento, procedimientos y conclusiones. | Documentación final y entrega. |
+| 1. Análisis | Revisar empresa, departamentos, usuarios, servicios y necesidades TIC. | Necesidades documentadas. |
+| 2. Diseño | Comparar alternativas, acordar decisiones, validar compatibilidad, diseñar red, direccionamiento, recursos y presupuesto. | Diseño técnico, acta de decisiones y presupuesto contrastado. |
+| 3. Preparación | Comprobar inventario, equipos, licencias, permisos y recursos antes de comprar o instalar. | Lista de requisitos y compras aprobada. |
+| 4. Implantación | Instalar y configurar los servicios aprobados por fases. | Infraestructura configurada. |
+| 5. Pruebas | Verificar conectividad, permisos, segmentación, copias y restauración. | Registro de pruebas e incidencias. |
+| 6. Documentación | Actualizar diagramas, inventario, IP, procedimientos y conclusiones. | Documentación final revisada. |
 
-Esta práctica corresponde a la planificación y al diseño de la solución. No se están instalando ni configurando los sistemas en esta fase.
+La documentación del proyecto y el laboratorio virtual no equivalen a una implantación de producción. Los servicios se marcarán como implantados solo cuando existan pruebas y evidencias reales.
 
 ## 7.2. Metodología Scrum
 
-Scrum es un marco de trabajo ágil que organiza el trabajo en periodos cortos llamados *sprints*. El equipo selecciona las tareas prioritarias, trabaja en ellas, revisa los resultados y adapta la planificación según el avance.
+El equipo está formado por Juan Carlos Vasconez Rojas e Isaac Matias Beltran Moreno. Se trabajará por bloques y revisiones cortas: seleccionar tareas, asignar responsables, realizar el trabajo, revisar la evidencia y actualizar el estado en Trello.
 
-En este proyecto, los dos integrantes colaboran en la realización y revisión de las tareas. Las responsabilidades se pueden repartir entre Juan Carlos Vasconez Rojas e Isaac Matias Beltran Moreno según el trabajo que se vaya realizando. En el tablero consultado no aparecen miembros asignados individualmente a las tarjetas, por lo que no se atribuye una tarea concreta a una persona sin que figure en Trello.
+## 7.3. Reparto de responsabilidades propuesto
 
-## 7.3. Organización real del tablero Trello
-
-El seguimiento del proyecto se realiza en el tablero **Proyecto Intermodular — TecnoVal Assistència IT-Juan Carlos-Isaac Beltran**.
-
-**Enlace al tablero:** [Proyecto Intermodular — TecnoVal Assistència IT](https://trello.com/b/PPo2BEAZ/proyecto-intermodular-tecnoval-assistencia-it-juan-carlos-isaac-beltran)
-
-En el tablero consultado aparecen cuatro listas:
-
-| Lista de Trello | Función |
-|---|---|
-| **Planificacion y backlog** | Contiene tareas de organización y preparación del proyecto. |
-| **Por hacer** | Agrupa las tareas pendientes de realizar. |
-| **Revisión** | Contiene tareas que deben comprobarse antes de dar el trabajo por terminado. |
-| **Realizadas** | Reúne las tareas que ya aparecen completadas. |
-
-### Tareas del Bloque 2
-
-Las tarjetas de Trello deben actualizarse por el equipo según el avance real. Este documento de GitHub registra el contenido que ya está elaborado en el repositorio; no modifica el tablero ni afirma que las tarjetas se hayan movido. Antes de entregar, sincronizad en Trello los estados, responsables y evidencias con el trabajo que realmente esté terminado:
-
-| Tarjeta del tablero | Trabajo indicado en la tarjeta | Estado |
+| Integrante | Responsabilidad principal | Revisión cruzada |
 |---|---|---|
-| **Bloque 2 — Identificar necesidades y comparar alternativas** | Los documentos `01-necessitats.md` y `02-alternatives-viabilitat.md` están presentes en GitHub; falta que el equipo confirme/revise la tarjeta en Trello. | Completado |
-| **Bloque 2 — Diseñar la red y el direccionamiento IP** | `03-disseny-xarxa.md`, `04-adrecament-ip.md` y el esquema de red están en GitHub; revisar la tarjeta y comprobar el dibujo/IP antes de marcarla terminada. | Completado |
-| **Bloque 2 — Seleccionar recursos y preparar el presupuesto** | `05-recursos.md` y `06-pressupost.md` están en GitHub; falta verificar cotizaciones, precios y viabilidad económica y reflejar el estado real en Trello. | Completado |
-| **Bloque 2 — Planificar el proyecto con Scrum y Trello** | Este documento de planificación está en GitHub; el tablero y sus tarjetas deben revisarse/actualizarse manualmente por el equipo. | Completado |
-| **Bloque 2 — Integrar documentación y actualizar README** | Los documentos y el esquema se encuentran en el repositorio; comprobar enlaces y actualizar el README, y después reflejar el resultado en Trello. | Completado |
-| **Bloque 2 — Guardar avances y preparar la entrega** | Registrar los cambios de GitHub, revisar el acceso del profesorado y preparar la entrega; la tarjeta debe reflejar el estado real. | Completado |
+| Juan Carlos Vasconez Rojas | Coordinación del calendario, documentación, inventario de evidencias, pruebas de aceptación y seguimiento de Trello | Revisar con Isaac las decisiones técnicas y el presupuesto |
+| Isaac Matias Beltran Moreno | Diseño/configuración de red, hosts, virtualización, servidores y servicios de infraestructura | Revisar con Juan Carlos documentación, pruebas y evidencias |
+| Ambos | Acordar alternativas, confirmar decisiones, revisar compatibilidad y cotizaciones, aprobar cambios y preparar la entrega | Ambos deben confirmar las decisiones importantes |
 
-El tablero incluye una tarjeta de revisión general según la organización descrita previamente. El estado actual debe comprobarse directamente en Trello, ya que este archivo no actualiza el tablero.
+Este reparto es una propuesta de organización. Para que exista evidencia de consenso, ambos integrantes deben confirmar el reparto y asignarse las tarjetas en Trello. No se atribuyen tareas como aceptadas por el otro integrante sin su confirmación.
 
-Las tarjetas y listas pueden cambiar conforme avance el equipo. Por ello, esta documentación evita presentar como actuales estados que deben verificarse en el propio tablero.
+## 7.4. Organización y revisión del tablero Trello
 
-## 7.4. Responsables y seguimiento
+**Tablero:** [Proyecto Intermodular — TecnoVal Assistència IT](https://trello.com/b/PPo2BEAZ/proyecto-intermodular-tecnoval-assistencia-it-juan-carlos-isaac-beltran).
 
-Las tarjetas consultadas no muestran miembros asignados. Por este motivo, el documento refleja los nombres de las tareas y sus estados reales, pero no inventa responsables individuales. Juan Carlos e Isaac participan en el proyecto y pueden acordar el reparto de cada tarjeta directamente en Trello.
+El equipo debe comprobar las listas del tablero y utilizar estos criterios:
 
-El seguimiento consiste en mover cada tarjeta a la lista que corresponda conforme avance el trabajo: de **Por hacer** a **Revisión** cuando esté preparada para comprobarse, y finalmente a **Realizadas** cuando esté terminada y revisada.
+- **Por hacer:** trabajo que todavía no se ha iniciado.
+- **En curso:** trabajo que se está realizando.
+- **Revisión:** trabajo terminado por su responsable, pero pendiente de comprobación.
+- **Realizadas:** trabajo revisado, con evidencia y aceptación del equipo.
 
-## 7.5. Evidencia del tablero
+Si el tablero utiliza nombres de listas diferentes, se mantendrán los nombres reales y se aplicará el mismo criterio. Una tarjeta no se moverá a «Realizadas» solo porque exista un documento en GitHub: debe comprobarse su contenido y adjuntarse la evidencia.
 
-**Enlace al tablero:** [Abrir Trello](https://trello.com/b/PPo2BEAZ/proyecto-intermodular-tecnoval-assistencia-it-juan-carlos-isaac-beltran).
+### Estado documental del Bloque 2
 
-Captura de tablero Trello
-<img width="923" height="681" alt="image" src="https://github.com/user-attachments/assets/b2d86c20-dd02-44b8-b4eb-aa0a982320c7" />
+| Tarea | Evidencia que ya existe en GitHub | Estado correcto antes de la revisión |
+|---|---|---|
+| Identificar necesidades y comparar alternativas | 01-necessitats.md y 02-alternatives-viabilitat.md | Documentación redactada; falta confirmar consenso y revisar la decisión web. |
+| Diseñar red y direccionamiento | 03-disseny-xarxa.md, 04-adrecament-ip.md y diagrama | Diseño documentado; falta validar equipos, conexiones, puertos y compatibilidad. |
+| Seleccionar recursos y presupuesto | 05-recursos.md y 06-pressupost.md | Inventario propuesto; faltan modelos/cotizaciones, discos NAS, cálculo de SAI y costes de mantenimiento. |
+| Planificar con Scrum y Trello | Este documento y el tablero | Plan redactado; falta asignar responsables y sincronizar estados reales. |
+| Integrar documentación y README | Archivos del repositorio | Revisar enlaces, coherencia entre documentos y evidencias. |
+| Guardar avances y preparar entrega | Commits y tablero | Pendiente de revisión final y confirmación del acceso del profesorado. |
 
-## 7.6. Criterio de finalización
+**Importante:** estos estados describen el estado documental conocido, no el estado actual de las tarjetas de Trello. Antes de entregar, consultar Trello y corregir las listas para que no haya tarjetas «Realizadas» que sigan pendientes de pruebas, consenso o cotizaciones.
 
-La planificación se considerará completada cuando las tareas del Bloque 2 estén terminadas y revisadas, los siete documentos estén en GitHub, el diagrama y los enlaces funcionen, el presupuesto sea coherente con los recursos y el profesorado pueda acceder al repositorio y al tablero.
+## 7.5. Registro de acuerdos del equipo
+
+Completar esta tabla durante una reunión o revisión conjunta. Añadir fecha y enlace a la tarjeta, comentario o captura de Trello que demuestre el acuerdo.
+
+| Decisión | Propuesta que se debe confirmar | Confirmación de Juan Carlos | Confirmación de Isaac | Fecha y evidencia |
+|---|---|---|---|---|
+| Alojamiento web | Externo en la primera fase; sin servidor web propio en DMZ | Pendiente | Pendiente | Pendiente |
+| Hardware de virtualización | Dos hosts; modelos sujetos a comprobación de compatibilidad | Pendiente | Pendiente | Pendiente |
+| NAS | QNAP TS-464-8G + cuatro discos NAS compatibles, pendiente de cotización | Pendiente | Pendiente | Pendiente |
+| Red | Dos switches gestionables de 24 puertos | Pendiente | Pendiente | Pendiente |
+| Reparto de tareas | Juan Carlos coordina/documenta/prueba; Isaac coordina infraestructura; ambos revisan | Pendiente | Pendiente | Pendiente |
+
+No rellenar las confirmaciones ni las fechas hasta que los dos integrantes hayan participado.
+
+## 7.6. Evidencia del tablero
+
+**Enlace:** [Abrir Trello](https://trello.com/b/PPo2BEAZ/proyecto-intermodular-tecnoval-assistencia-it-juan-carlos-isaac-beltran).
+
+Añadir una captura actualizada donde se vean las listas, las tarjetas del Bloque 2, las personas asignadas y las tareas que permanecen en revisión. La captura antigua no demuestra el estado actual si las tarjetas han cambiado.
+
+## 7.7. Criterio de finalización
+
+La planificación se considerará revisada cuando:
+- Las decisiones principales estén confirmadas por ambos integrantes.
+- Las tarjetas tengan responsables y estados que coincidan con el trabajo real.
+- Las tareas pendientes de comprobación permanezcan en revisión y no aparezcan como finalizadas.
+- Las evidencias estén enlazadas en las tarjetas.
+- El presupuesto incluya hardware completo, servicios del primer año, instalación y mantenimiento.
+- El repositorio, el diagrama y los documentos sean coherentes.
